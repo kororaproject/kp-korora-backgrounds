@@ -1,15 +1,20 @@
+%define upstream_package spherical-cow-backgrounds
+
 Name:           korora-backgrounds
 Version:        17.92.0
 Release:        1%{?dist}
-Summary:        Spherical Cow desktop backgrounds
+Summary:        Korora desktop backgrounds
 
 Group:          Applications/Multimedia
 License:        CC-BY-SA
 URL:            https://fedoraproject.org/wiki/F18_Artwork
-Source0:        https://fedorahosted.org/released/design-team/%{name}-%{version}.tar.xz
+Source0:        https://fedorahosted.org/released/design-team/%{upstream_package}-%{version}.tar.xz
+Source1:        korora-background-normalish.png
+Source2:        korora-background-standard.png
+Source3:        korora-background-wide.png
 
-Provides:       spherical-cow-backgrounds
-Obsoletes:      spherical-cow-backgrounds
+Provides:       %{upstream_package}
+Obsoletes:      %{upstream_package}
 
 BuildArch:      noarch
 
@@ -20,90 +25,97 @@ Requires:       %{name}-kde = %{version}-%{release}
 
 
 %description
-This package contains desktop backgrounds for the Spherical Cow theme.
+This package contains desktop backgrounds for the Korora theme.
 Pulls in both Gnome and KDE themes.
 
 %package        single
-Summary:        Single screen images for Spherical Cow Backgrounds
+Summary:        Single screen images for Korora Backgrounds
 Group:          Applications/Multimedia
 License:        CC-BY-SA
 
 %description    single
-This package contains single screen images for Spherical Cow
+This package contains single screen images for Korora
 Backgrounds.
 
 %package        kde
-Summary:        Spherical Cow Wallpapers for KDE
+Summary:        Korora Wallpapers for KDE
 Group:          Applications/Multimedia
 
 Requires:       %{name}-single = %{version}-%{release}
 Requires:       kde-filesystem
 
 %description    kde
-This package contains KDE desktop wallpapers for the Spherical Cow
+This package contains KDE desktop wallpapers for the Korora
 theme.
 
 %package        gnome
-Summary:        Spherical Cow Wallpapers for Gnome
+Summary:        Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
 
 Requires:       %{name}-single = %{version}-%{release}
 
 %description    gnome
-This package contains Gnome desktop wallpapers for the Spherical Cow
+This package contains Gnome desktop wallpapers for the Korora
 theme.
 
 %package        xfce
-Summary:        Spherical Cow Wallpapers for XFCE4
+Summary:        Korora Wallpapers for XFCE4
 Group:          Applications/Multimedia
 
 Requires:       %{name}-single = %{version}-%{release}
 Requires:       xfdesktop
 
 %description    xfce
-This package contains XFCE4 desktop wallpapers for the Spherical Cow
+This package contains XFCE4 desktop wallpapers for the Korora
 theme.
 
 %package        extras-single
-Summary:        Single screen images for Spherical Cow Extras Backrounds
+Summary:        Single screen images for Korora Extras Backrounds
 Group:          Applications/Multimedia
 License:        CC-BY and CC-BY-SA
 
 %description    extras-single
-This package contains single screen images for Spherical Cow supplemental
+This package contains single screen images for Korora supplemental
 wallpapers.
 
 %package        extras-gnome
-Summary:        Extra Spherical Cow Wallpapers for Gnome
+Summary:        Extra Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-single
 
 %description    extras-gnome
-This package contains Spherical Cow supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for Gnome
 
 %package        extras-kde
-Summary:        Extra Spherical Cow Wallpapers for KDE
+Summary:        Extra Korora Wallpapers for KDE
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-single
 
 %description    extras-kde
-This package contains Spherical Cow supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for Gnome
 
 %package        extras-xfce
-Summary:        Extra Spherical Cow Wallpapers for XFCE
+Summary:        Extra Korora Wallpapers for XFCE
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-single
 
 %description    extras-xfce
-This package contains Spherical Cow supplemental wallpapers for XFCE
+This package contains Korora supplemental wallpapers for XFCE
 
 
 %prep
-%setup -q
+%setup -q -n %{upstream_package}-%{version}
 
+echo -e "\n\n\n\n\n\n\n"
+pwd
+echo -e "\n\n\n\n\n\n\n"
+
+cp %{SOURCE1} default/normalish/spherical-cow-02-noon.png
+cp %{SOURCE2} default/standard/spherical-cow-02-noon.png
+cp %{SOURCE3} default/wide/spherical-cow-02-noon.png
 
 %build
 make %{?_smp_mflags}
