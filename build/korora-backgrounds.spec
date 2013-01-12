@@ -32,6 +32,9 @@ Pulls in both Gnome and KDE themes.
 Summary:        Single screen images for Korora Backgrounds
 Group:          Applications/Multimedia
 License:        CC-BY-SA
+Provides:       %{upstream_package}-single
+Obsoletes:      %{upstream_package}-single
+
 
 %description    single
 This package contains single screen images for Korora
@@ -40,6 +43,9 @@ Backgrounds.
 %package        kde
 Summary:        Korora Wallpapers for KDE
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-kde
+Obsoletes:      %{upstream_package}-kde
+
 
 Requires:       %{name}-single = %{version}-%{release}
 Requires:       kde-filesystem
@@ -51,6 +57,9 @@ theme.
 %package        gnome
 Summary:        Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-gnome
+Obsoletes:      %{upstream_package}-gnome
+
 
 Requires:       %{name}-single = %{version}-%{release}
 
@@ -61,6 +70,9 @@ theme.
 %package        xfce
 Summary:        Korora Wallpapers for XFCE4
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-xfce
+Obsoletes:      %{upstream_package}-xfce
+
 
 Requires:       %{name}-single = %{version}-%{release}
 Requires:       xfdesktop
@@ -73,6 +85,9 @@ theme.
 Summary:        Single screen images for Korora Extras Backrounds
 Group:          Applications/Multimedia
 License:        CC-BY and CC-BY-SA
+Provides:       %{upstream_package}-extras-single
+Obsoletes:      %{upstream_package}-extras-single
+
 
 %description    extras-single
 This package contains single screen images for Korora supplemental
@@ -81,6 +96,9 @@ wallpapers.
 %package        extras-gnome
 Summary:        Extra Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-extras-gnome
+Obsoletes:      %{upstream_package}-extras-gnome
+
 
 Requires:       %{name}-extras-single
 
@@ -90,6 +108,9 @@ This package contains Korora supplemental wallpapers for Gnome
 %package        extras-kde
 Summary:        Extra Korora Wallpapers for KDE
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-extras-kde
+Obsoletes:      %{upstream_package}-extras-kde
+
 
 Requires:       %{name}-extras-single
 
@@ -99,6 +120,9 @@ This package contains Korora supplemental wallpapers for Gnome
 %package        extras-xfce
 Summary:        Extra Korora Wallpapers for XFCE
 Group:          Applications/Multimedia
+Provides:       %{upstream_package}-extras-xfce
+Obsoletes:      %{upstream_package}-extras-xfce
+
 
 Requires:       %{name}-extras-single
 
