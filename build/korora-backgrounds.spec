@@ -1,4 +1,5 @@
-%define upstream_package schrodinger-cat-backgrounds
+%define u_name schroedinger-cat
+%define u_package schroedinger-cat-backgrounds
 
 Name:           korora-backgrounds
 Version:        18.90.0
@@ -8,13 +9,22 @@ Summary:        Korora desktop backgrounds
 Group:          Applications/Multimedia
 License:        CC-BY-SA
 URL:            https://fedoraproject.org/wiki/F19_Artwork
-Source0:        https://fedorahosted.org/released/design-team/%{upstream_package}-%{version}.tar.xz
-Source1:        korora-background-normalish.jpg
-Source2:        korora-background-standard.jpg
-Source3:        korora-background-wide.jpg
+Source0:        https://fedorahosted.org/released/design-team/%{u_package}-%{version}.tar.xz
+Source1:        korora-background-dawn-normalish.jpg
+Source2:        korora-background-dawn-standard.jpg
+Source3:        korora-background-dawn-wide.jpg
+Source4:        korora-background-day-normalish.jpg
+Source5:        korora-background-day-standard.jpg
+Source6:        korora-background-day-wide.jpg
+Source7:        korora-background-dusk-normalish.jpg
+Source8:        korora-background-dusk-standard.jpg
+Source9:        korora-background-dusk-wide.jpg
+Source10:       korora-background-night-normalish.jpg
+Source11:       korora-background-night-standard.jpg
+Source12:       korora-background-night-wide.jpg
 
-Provides:       %{upstream_package}
-Obsoletes:      %{upstream_package}
+Provides:       %{u_package}
+Obsoletes:      %{u_package}
 
 BuildArch:      noarch
 
@@ -34,8 +44,8 @@ Pulls in both Gnome, KDE, MATE and XFCE themes.
 Summary:        Base images for Korora Backgrounds
 Group:          Applications/Multimedia
 License:        CC-BY-SA
-Provides:       %{upstream_package}-base
-Obsoletes:      %{upstream_package}-base
+Provides:       %{u_package}-base
+Obsoletes:      %{u_package}-base
 
 %description    base
 This package contains base images for Schrödinger's Cat Backgrounds.
@@ -43,8 +53,8 @@ This package contains base images for Schrödinger's Cat Backgrounds.
 %package        animated
 Summary:        Time of day images for Schrödinger's Cat Backgrounds
 Group:          Applications/Multimedia
-Provides:       %{upstream_package}-animated
-Obsoletes:      %{upstream_package}-animated
+Provides:       %{u_package}-animated
+Obsoletes:      %{u_package}-animated
 
 Requires:       %{name}-base = %{version}-%{release}
 
@@ -54,8 +64,8 @@ This package contains the time of day images for Korora backgrounds
 %package        kde
 Summary:        Korora Wallpapers for KDE
 Group:          Applications/Multimedia
-Provides:       %{upstream_package}-kde
-Obsoletes:      %{upstream_package}-kde
+Provides:       %{u_package}-kde
+Obsoletes:      %{u_package}-kde
 
 Requires:       %{name}-base = %{version}-%{release}
 Requires:       kde-filesystem
@@ -67,8 +77,8 @@ theme.
 %package        gnome
 Summary:        Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
-Provides:       %{upstream_package}-gnome
-Obsoletes:      %{upstream_package}-gnome
+Provides:       %{u_package}-gnome
+Obsoletes:      %{u_package}-gnome
 
 Requires:       %{name}-animated = %{version}-%{release}
 
@@ -79,8 +89,8 @@ theme.
 %package        mate
 Summary:        Schrödinger's Cat Wallpapers for Mate
 Group:          Applications/Multimedia
-Provides:       %{upstream_package}-mate
-Obsoletes:      %{upstream_package}-mate
+Provides:       %{u_package}-mate
+Obsoletes:      %{u_package}-mate
 
 Requires:       %{name}-animated = %{version}-%{release}
 
@@ -91,8 +101,8 @@ This package contains Mate desktop wallpapers for the Korora theme.
 %package        xfce
 Summary:        Schrödinger's Cat Wallpapers for XFCE4
 Group:          Applications/Multimedia
-Provides:       %{upstream_package}-xfce
-Obsoletes:      %{upstream_package}-xfce
+Provides:       %{u_package}-xfce
+Obsoletes:      %{u_package}-xfce
 
 Requires:       %{name}-base = %{version}-%{release}
 Requires:       xfdesktop
@@ -150,11 +160,24 @@ theme.
 
 
 %prep
-%setup -q -n %{upstream_package}-%{version}
+%setup -q -n %{u_package}-%{version}
 
-cp %{SOURCE1} default/normalish/schroedinger-cat-01-day.jpg
-cp %{SOURCE2} default/standard/schroedinger-cat-01-day.jpg
-cp %{SOURCE3} default/wide/schroedinger-cat-01-day.jpg
+cp %{SOURCE1} default/normalish/%{u_name}-00-dawn.jpg
+cp %{SOURCE2} default/standard/%{u_name}-00-dawn.jpg
+cp %{SOURCE3} default/wide/%{u_name}-00-dawn.jpg
+
+cp %{SOURCE4} default/normalish/%{u_name}-01-day.jpg
+cp %{SOURCE5} default/standard/%{u_name}-01-day.jpg
+cp %{SOURCE6} default/wide/%{u_name}-01-day.jpg
+
+cp %{SOURCE7} default/normalish/%{u_name}-02-dusk.jpg
+cp %{SOURCE8} default/standard/%{u_name}-02-dusk.jpg
+cp %{SOURCE9} default/wide/%{u_name}-02-dusk.jpg
+
+cp %{SOURCE10} default/normalish/%{u_name}-03-night.jpg
+cp %{SOURCE11} default/standard/%{u_name}-03-night.jpg
+cp %{SOURCE12} default/wide/%{u_name}-03-night.jpg
+
 
 %build
 make %{?_smp_mflags}
