@@ -105,7 +105,6 @@ Provides:       %{u_package}-xfce
 Obsoletes:      %{u_package}-xfce
 
 Requires:       %{name}-base = %{version}-%{release}
-Requires:       xfdesktop
 
 %description    xfce
 This package contains XFCE4 desktop wallpapers for the Schrödinger's Cat
