@@ -2,7 +2,7 @@
 %define u_package schroedinger-cat-backgrounds
 
 Name:           korora-backgrounds
-Version:        18.90.0
+Version:        18.91.0
 Release:        1%{?dist}
 Summary:        Korora desktop backgrounds
 
@@ -38,7 +38,7 @@ Requires:       %{name}-mate = %{version}-%{release}
 
 %description
 This package contains desktop backgrounds for the Korora theme.
-Pulls in both Gnome, KDE, MATE and XFCE themes.
+Pulls in themes for GNOME, KDE, Mate and Xfce desktops.
 
 %package        base
 Summary:        Base images for Korora Backgrounds
@@ -105,57 +105,67 @@ Provides:       %{u_package}-xfce
 Obsoletes:      %{u_package}-xfce
 
 Requires:       %{name}-base = %{version}-%{release}
+Requires:       xfdesktop
 
 %description    xfce
 This package contains XFCE4 desktop wallpapers for the Schrödinger's Cat
 theme.
 
-# Extras will be enabled later
-#~ %package        extras-base
-#~ Summary:        Base images for Schrödinger's Cat Extras Backrounds
-#~ Group:          Applications/Multimedia
-#~ License:        CC-BY and CC-BY-SA
-#~
-#~ %description    extras-base
-#~ This package contains base images for Schrödinger's Cat supplemental
-#~ wallpapers.
-#~
-#~ %package        extras-gnome
-#~ Summary:        Extra Schrödinger's Cat Wallpapers for Gnome and Cinnamon
-#~ Group:          Applications/Multimedia
-#~
-#~ Requires:       %{name}-extras-base
-#~
-#~ %description    extras-gnome
-#~ This package contains Schrödinger's Cat supplemental wallpapers for Gnome
-#~ and Cinnamon
-#~
-#~ %package        extras-mate
-#~ Summary:        Extra Schrödinger's Cat Wallpapers for Mate
-#~ Group:          Applications/Multimedia
-#~
-#~ Requires:       %{name}-extras-base
-#~
-#~ %description    extras-mate
-#~ This package contains Schrödinger's Cat supplemental wallpapers for Mate
-#~
-#~ %package        extras-kde
-#~ Summary:        Extra Schrödinger's Cat Wallpapers for KDE
-#~ Group:          Applications/Multimedia
-#~
-#~ Requires:       %{name}-extras-base
-#~
-#~ %description    extras-kde
-#~ This package contains Schrödinger's Cat supplemental wallpapers for Gnome
-#~
-#~ %package        extras-xfce
-#~ Summary:        Extra Schrödinger's Cat Wallpapers for XFCE
-#~ Group:          Applications/Multimedia
-#~
-#~ Requires:       %{name}-extras-base
-#~
-#~ %description    extras-xfce
-#~ This package contains Schrödinger's Cat supplemental wallpapers for XFCE
+%package        extras-base
+Summary:        Base images for Schrödinger's Cat Extras Backrounds
+Group:          Applications/Multimedia
+License:        CC-BY and CC-BY-SA
+Provides:       %{u_package}-extras-base
+Obsoletes:      %{u_package}-extras-base
+
+%description    extras-base
+This package contains base images for Schrödinger's Cat supplemental
+wallpapers.
+
+%package        extras-gnome
+Summary:        Extra Schrödinger's Cat Wallpapers for Gnome and Cinnamon
+Group:          Applications/Multimedia
+Provides:       %{u_package}-extras-gnome
+Obsoletes:      %{u_package}-extras-gnome
+
+Requires:       %{name}-extras-base
+
+%description    extras-gnome
+This package contains Schrödinger's Cat supplemental wallpapers for Gnome
+and Cinnamon
+
+%package        extras-mate
+Summary:        Extra Schrödinger's Cat Wallpapers for Mate
+Group:          Applications/Multimedia
+Provides:       %{u_package}-extras-mate
+Obsoletes:      %{u_package}-extras-mate
+
+Requires:       %{name}-extras-base
+
+%description    extras-mate
+This package contains Schrödinger's Cat supplemental wallpapers for Mate
+
+%package        extras-kde
+Summary:        Extra Schrödinger's Cat Wallpapers for KDE
+Group:          Applications/Multimedia
+Provides:       %{u_package}-extras-kde
+Obsoletes:      %{u_package}-extras-kde
+
+Requires:       %{name}-extras-base
+
+%description    extras-kde
+This package contains Schrödinger's Cat supplemental wallpapers for Gnome
+
+%package        extras-xfce
+Summary:        Extra Schrödinger's Cat Wallpapers for XFCE
+Group:          Applications/Multimedia
+Provides:       %{u_package}-extras-xfce
+Obsoletes:      %{u_package}-extras-xfce
+
+Requires:       %{name}-extras-base
+
+%description    extras-xfce
+This package contains Schrödinger's Cat supplemental wallpapers for XFCE
 
 
 %prep
@@ -216,23 +226,30 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %files xfce
 %{_datadir}/xfce4/backdrops/schroedinger-cat.jpg
 
-#~ %files extras-base
-#~ %doc CC-BY-SA-3.0 Attribution-Extras
-#~ %{_datadir}/backgrounds/schroedinger-cat/extras/*.jpg
-#~ %{_datadir}/backgrounds/schroedinger-cat/extras/schroedinger-cat-extras.xml
-#~
-#~ %files extras-gnome
-#~ %{_datadir}/gnome-background-properties/schroedinger-cat-extras.xml
-#~
-#~ %files extras-kde
-#~ %{_kde4_datadir}/wallpapers/Schroedinger_Cat_*/
-#~
-#~ %files extras-mate
-#~ %{_datadir}/mate-background-properties/schroedinger-cat-extras.xml
-#~
-#~ %files extras-xfce
-#~ %{_datadir}/xfce4/backdrops/*.jpg
+%files extras-base
+%doc CC-BY-SA-3.0 CC-BY-3.0 Attribution-Extras
+%{_datadir}/backgrounds/schroedinger-cat/extras/*.jpg
+%{_datadir}/backgrounds/schroedinger-cat/extras/*.png
+%{_datadir}/backgrounds/schroedinger-cat/extras/schroedinger-cat-extras.xml
+
+%files extras-gnome
+%{_datadir}/gnome-background-properties/schroedinger-cat-extras.xml
+
+%files extras-kde
+%{_kde4_datadir}/wallpapers/Schroedinger_Cat_*/
+
+%files extras-mate
+%{_datadir}/mate-background-properties/schroedinger-cat-extras.xml
+
+%files extras-xfce
+%{_datadir}/xfce4/backdrops/*.jpg
+%{_datadir}/xfce4/backdrops/*.png
 
 %changelog
+* Thu May 16 2013 Martin Sourada <mso@fedoraproject.org> - 18.91.0-1
+- New release. 
+  - Adds supplemental wallpapers.
+  - Switches non-animated default from night to dawn (rhbz 962952)
+
 * Sun Mar 03 2013 Martin Sourada <mso@fedoraproject.org> - 18.90.0-1
 - Initial rpm release
