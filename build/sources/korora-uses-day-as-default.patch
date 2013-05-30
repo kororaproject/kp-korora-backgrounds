@@ -1,13 +1,14 @@
 --- a/default/Makefile	2013-05-22 06:25:33.000000000 +1000
-+++ b/default/Makefile	2013-05-29 19:32:14.313574944 +1000
++++ b/default/Makefile	2013-05-30 13:44:48.610857655 +1000
 @@ -19,9 +19,9 @@
  	$(MKDIR) $(SCHROEDINGER_CAT_DIR)/default-animated/normalish
  	$(MKDIR) $(GNOME_BG_DIR)
  	for size in normalish standard wide; do \
 -	  $(INSTALL) $${size}/schroedinger-cat-00-dawn.jpg		    $(SCHROEDINGER_CAT_DIR)/default/$${size}/schroedinger-cat.jpg ; \
-+	  $(INSTALL) $${size}/schroedinger-cat-01-day.jpg		    $(SCHROEDINGER_CAT_DIR)/default/$${size}/schroedinger-cat.jpg ; \
- 	  $(LN_S) ../../default/$${size}/schroedinger-cat.jpg	    $(SCHROEDINGER_CAT_DIR)/default-animated/$${size}/schroedinger-cat-00-dawn.jpg ; \
+-	  $(LN_S) ../../default/$${size}/schroedinger-cat.jpg	    $(SCHROEDINGER_CAT_DIR)/default-animated/$${size}/schroedinger-cat-00-dawn.jpg ; \
 -	  for tod in 01-day 02-dusk 03-night; do \
++	  $(INSTALL) $${size}/schroedinger-cat-01-day.jpg		    $(SCHROEDINGER_CAT_DIR)/default/$${size}/schroedinger-cat.jpg ; \
++	  $(LN_S) ../../default/$${size}/schroedinger-cat.jpg	    $(SCHROEDINGER_CAT_DIR)/default-animated/$${size}/schroedinger-cat-01-day.jpg ; \
 +	  for tod in 00-dawn 02-dusk 03-night; do \
  	    $(INSTALL) $${size}/schroedinger-cat-$${tod}.jpg 		$(SCHROEDINGER_CAT_DIR)/default-animated/$${size}/schroedinger-cat-$${tod}.jpg ; \
  	  done; \
