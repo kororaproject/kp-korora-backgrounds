@@ -22,7 +22,7 @@ Source9:        korora-background-dusk-wide.jpg
 Source10:       korora-background-night-normalish.jpg
 Source11:       korora-background-night-standard.jpg
 Source12:       korora-background-night-wide.jpg
-Source13:       korora-uses-day-as-default.patch
+Patch0:         korora-uses-day-as-default.patch
 
 Provides:       %{u_package}
 Obsoletes:      %{u_package}
@@ -188,7 +188,7 @@ cp %{SOURCE10} default/normalish/%{u_name}-03-night.jpg
 cp %{SOURCE11} default/standard/%{u_name}-03-night.jpg
 cp %{SOURCE12} default/wide/%{u_name}-03-night.jpg
 
-patch -p1 %{SOURCE13}
+%patch0 -p1
 
 
 %build
