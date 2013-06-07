@@ -3,7 +3,7 @@
 
 Name:           korora-backgrounds
 Version:        18.91.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Korora desktop backgrounds
 
 Group:          Applications/Multimedia
@@ -40,6 +40,10 @@ Requires:       %{name}-mate = %{version}-%{release}
 %description
 This package contains desktop backgrounds for the Korora theme.
 Pulls in themes for GNOME, KDE, Mate and Xfce desktops.
+
+Artwork inspired by hotiron's [1] "nanotubes" [2]
+[1] www.hotiron.com
+[2] hotiron.deviantart.com/art/nanotubes-110808199
 
 %package        base
 Summary:        Base images for Korora Backgrounds
