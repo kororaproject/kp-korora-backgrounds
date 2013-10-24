@@ -1,9 +1,10 @@
-%define u_name schroedinger-cat
-%define u_package schroedinger-cat-backgrounds
+%define u_name heisenbug
+%define U_name Heisenbug
+%define u_package heisenbug-backgrounds
 
 Name:           korora-backgrounds
-Version:        18.91.0
-Release:        3%{?dist}
+Version:        19.90.0
+Release:        1%{?dist}
 Summary:        Korora desktop backgrounds
 
 Group:          Applications/Multimedia
@@ -41,10 +42,6 @@ Requires:       %{name}-mate = %{version}-%{release}
 This package contains desktop backgrounds for the Korora theme.
 Pulls in themes for GNOME, KDE, Mate and Xfce desktops.
 
-Artwork inspired by hotiron's [1] "nanotubes" [2]
-[1] www.hotiron.com
-[2] hotiron.deviantart.com/art/nanotubes-110808199
-
 %package        base
 Summary:        Base images for Korora Backgrounds
 Group:          Applications/Multimedia
@@ -53,18 +50,18 @@ Provides:       %{u_package}-base
 Obsoletes:      %{u_package}-base
 
 %description    base
-This package contains base images for Schrödinger's Cat Backgrounds.
+This package contains base images for Korora Backgrounds
 
-%package        animated
-Summary:        Time of day images for Schrödinger's Cat Backgrounds
-Group:          Applications/Multimedia
-Provides:       %{u_package}-animated
-Obsoletes:      %{u_package}-animated
-
-Requires:       %{name}-base = %{version}-%{release}
-
-%description    animated
-This package contains the time of day images for Korora backgrounds
+#%package        animated
+#Summary:        Time of day images for Korora Backgrounds
+#Group:          Applications/Multimedia
+#Provides:       %{u_package}-animated
+#Obsoletes:      %{u_package}-animated
+#
+#Requires:       %{name}-base = %{version}-%{release}
+#
+#%description    animated
+#This package contains the time of day images for Korora backgrounds
 
 %package        kde
 Summary:        Korora Wallpapers for KDE
@@ -92,7 +89,7 @@ This package contains Gnome desktop wallpapers for the Korora
 theme.
 
 %package        mate
-Summary:        Schrödinger's Cat Wallpapers for Mate
+Summary:        Korora Wallpapers for Mate
 Group:          Applications/Multimedia
 Provides:       %{u_package}-mate
 Obsoletes:      %{u_package}-mate
@@ -104,7 +101,7 @@ This package contains Mate desktop wallpapers for the Korora theme.
 
 
 %package        xfce
-Summary:        Schrödinger's Cat Wallpapers for XFCE4
+Summary:        Korora Wallpapers for XFCE4
 Group:          Applications/Multimedia
 Provides:       %{u_package}-xfce
 Obsoletes:      %{u_package}-xfce
@@ -113,65 +110,65 @@ Requires:       %{name}-base = %{version}-%{release}
 Requires:       xfdesktop
 
 %description    xfce
-This package contains XFCE4 desktop wallpapers for the Schrödinger's Cat
+This package contains XFCE4 desktop wallpapers for the Korora
 theme.
 
-%package        extras-base
-Summary:        Base images for Schrödinger's Cat Extras Backrounds
-Group:          Applications/Multimedia
-License:        CC-BY and CC-BY-SA
-Provides:       %{u_package}-extras-base
-Obsoletes:      %{u_package}-extras-base
-
-%description    extras-base
-This package contains base images for Schrödinger's Cat supplemental
-wallpapers.
-
-%package        extras-gnome
-Summary:        Extra Schrödinger's Cat Wallpapers for Gnome and Cinnamon
-Group:          Applications/Multimedia
-Provides:       %{u_package}-extras-gnome
-Obsoletes:      %{u_package}-extras-gnome
-
-Requires:       %{name}-extras-base
-
-%description    extras-gnome
-This package contains Schrödinger's Cat supplemental wallpapers for Gnome
-and Cinnamon
-
-%package        extras-mate
-Summary:        Extra Schrödinger's Cat Wallpapers for Mate
-Group:          Applications/Multimedia
-Provides:       %{u_package}-extras-mate
-Obsoletes:      %{u_package}-extras-mate
-
-Requires:       %{name}-extras-base
-
-%description    extras-mate
-This package contains Schrödinger's Cat supplemental wallpapers for Mate
-
-%package        extras-kde
-Summary:        Extra Schrödinger's Cat Wallpapers for KDE
-Group:          Applications/Multimedia
-Provides:       %{u_package}-extras-kde
-Obsoletes:      %{u_package}-extras-kde
-
-Requires:       %{name}-extras-base
-
-%description    extras-kde
-This package contains Schrödinger's Cat supplemental wallpapers for Gnome
-
-%package        extras-xfce
-Summary:        Extra Schrödinger's Cat Wallpapers for XFCE
-Group:          Applications/Multimedia
-Provides:       %{u_package}-extras-xfce
-Obsoletes:      %{u_package}-extras-xfce
-
-Requires:       %{name}-extras-base
-
-%description    extras-xfce
-This package contains Schrödinger's Cat supplemental wallpapers for XFCE
-
+#%package        extras-base
+#Summary:        Base images for Korora Extras Backrounds
+#Group:          Applications/Multimedia
+#License:        CC-BY and CC-BY-SA
+#Provides:       %{u_package}-extras-base
+#Obsoletes:      %{u_package}-extras-base
+#
+#%description    extras-base
+#This package contains base images for Korora supplemental
+#wallpapers.
+#
+#%package        extras-gnome
+#Summary:        Extra Korora Wallpapers for Gnome and Cinnamon
+#Group:          Applications/Multimedia
+#Provides:       %{u_package}-extras-gnome
+#Obsoletes:      %{u_package}-extras-gnome
+#
+#Requires:       %{name}-extras-base
+#
+#%description    extras-gnome
+#This package contains Korora supplemental wallpapers for Gnome
+#and Cinnamon
+#
+#%package        extras-mate
+#Summary:        Extra Korora Wallpapers for Mate
+#Group:          Applications/Multimedia
+#Provides:       %{u_package}-extras-mate
+#Obsoletes:      %{u_package}-extras-mate
+#
+#Requires:       %{name}-extras-base
+#
+#%description    extras-mate
+#This package contains Korora supplemental wallpapers for Mate
+#
+#%package        extras-kde
+#Summary:        Extra Korora Wallpapers for KDE
+#Group:          Applications/Multimedia
+#Provides:       %{u_package}-extras-kde
+#Obsoletes:      %{u_package}-extras-kde
+#
+#Requires:       %{name}-extras-base
+#
+#%description    extras-kde
+#This package contains Korora supplemental wallpapers for Gnome
+#
+#%package        extras-xfce
+#Summary:        Extra Korora Wallpapers for XFCE
+#Group:          Applications/Multimedia
+#Provides:       %{u_package}-extras-xfce
+#Obsoletes:      %{u_package}-extras-xfce
+#
+#Requires:       %{name}-extras-base
+#
+#%description    extras-xfce
+#This package contains Korora supplemental wallpapers for XFCE
+#
 
 %prep
 %setup -q -n %{u_package}-%{version}
@@ -192,7 +189,7 @@ cp %{SOURCE10} default/normalish/%{u_name}-03-night.jpg
 cp %{SOURCE11} default/standard/%{u_name}-03-night.jpg
 cp %{SOURCE12} default/wide/%{u_name}-03-night.jpg
 
-%patch0 -p1
+#%patch0 -p1
 
 
 %build
@@ -207,56 +204,52 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %files base
 %doc CC-BY-SA-3.0 Attribution
-%dir %{_datadir}/backgrounds/schroedinger-cat
-%dir %{_datadir}/backgrounds/schroedinger-cat/default
-%{_datadir}/backgrounds/schroedinger-cat/default/normalish
-%{_datadir}/backgrounds/schroedinger-cat/default/standard
-%{_datadir}/backgrounds/schroedinger-cat/default/wide
-%{_datadir}/backgrounds/schroedinger-cat/default/schroedinger-cat.xml
+%dir %{_datadir}/backgrounds/%{u_name}
+%dir %{_datadir}/backgrounds/%{u_name}/default
+%{_datadir}/backgrounds/%{u_name}/default/normalish
+%{_datadir}/backgrounds/%{u_name}/default/standard
+%{_datadir}/backgrounds/%{u_name}/default/wide
+%{_datadir}/backgrounds/%{u_name}/default/tv-wide
+%{_datadir}/backgrounds/%{u_name}/default/%{u_name}.xml
 
-%files animated
-%dir %{_datadir}/backgrounds/schroedinger-cat/default-animated
-%{_datadir}/backgrounds/schroedinger-cat/default-animated/normalish
-%{_datadir}/backgrounds/schroedinger-cat/default-animated/standard
-%{_datadir}/backgrounds/schroedinger-cat/default-animated/wide
-%{_datadir}/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml
+#%files animated
+#%dir %{_datadir}/backgrounds/%{u_name}/default-animated
+#%{_datadir}/backgrounds/%{u_name}/default-animated/normalish
+#%{_datadir}/backgrounds/%{u_name}/default-animated/standard
+#%{_datadir}/backgrounds/%{u_name}/default-animated/wide
+#%{_datadir}/backgrounds/%{u_name}/default-animated/%{u_name}.xml
 
 %files kde
-%{_kde4_datadir}/wallpapers/Schroedinger_Cat/
+%{_kde4_datadir}/wallpapers/%{U_name}/
 
 %files gnome
-%{_datadir}/gnome-background-properties/schroedinger-cat-animated.xml
+%{_datadir}/gnome-background-properties/%{u_name}.xml
 
 %files mate
-%{_datadir}/mate-background-properties/schroedinger-cat-animated.xml
+%{_datadir}/mate-background-properties/%{u_name}.xml
 
 %files xfce
-%{_datadir}/xfce4/backdrops/schroedinger-cat.jpg
+%{_datadir}/xfce4/backdrops/%{u_name}.png
 
-%files extras-base
-%doc CC-BY-SA-3.0 CC-BY-3.0 Attribution-Extras
-%{_datadir}/backgrounds/schroedinger-cat/extras/*.jpg
-%{_datadir}/backgrounds/schroedinger-cat/extras/*.png
-%{_datadir}/backgrounds/schroedinger-cat/extras/schroedinger-cat-extras.xml
-
-%files extras-gnome
-%{_datadir}/gnome-background-properties/schroedinger-cat-extras.xml
-
-%files extras-kde
-%{_kde4_datadir}/wallpapers/Schroedinger_Cat_*/
-
-%files extras-mate
-%{_datadir}/mate-background-properties/schroedinger-cat-extras.xml
-
-%files extras-xfce
-%{_datadir}/xfce4/backdrops/*.jpg
-%{_datadir}/xfce4/backdrops/*.png
-
+#%files extras-base
+#%doc CC-BY-SA-3.0 CC-BY-3.0 Attribution-Extras
+#%{_datadir}/backgrounds/%{u_name}/extras/*.jpg
+#%{_datadir}/backgrounds/%{u_name}/extras/*.png
+#%{_datadir}/backgrounds/%{u_name}/extras/%{u_name}-extras.xml
+#
+#%files extras-gnome
+#%{_datadir}/gnome-background-properties/%{u_name}-extras.xml
+#
+#%files extras-kde
+#%{_kde4_datadir}/wallpapers/%{U_name}_*/
+#
+#%files extras-mate
+#%{_datadir}/mate-background-properties/%{u_name}-extras.xml
+#
+#%files extras-xfce
+#%{_datadir}/xfce4/backdrops/*.jpg
+#%{_datadir}/xfce4/backdrops/*.png
+#
 %changelog
-* Thu May 16 2013 Martin Sourada <mso@fedoraproject.org> - 18.91.0-1
-- New release. 
-  - Adds supplemental wallpapers.
-  - Switches non-animated default from night to dawn (rhbz 962952)
-
-* Sun Mar 03 2013 Martin Sourada <mso@fedoraproject.org> - 18.90.0-1
+* Mon Sep 09 2013 Martin Sourada <mso@fedoraproject.org> - 19.90.0-1
 - Initial rpm release
