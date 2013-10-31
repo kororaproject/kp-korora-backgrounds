@@ -11,22 +11,22 @@ Group:          Applications/Multimedia
 License:        CC-BY-SA
 URL:            https://fedoraproject.org/wiki/F19_Artwork
 Source0:        https://fedorahosted.org/released/design-team/%{u_package}-%{version}.tar.xz
-Source1:        korora-background-dawn-normalish.jpg
-Source2:        korora-background-dawn-standard.jpg
-Source3:        korora-background-dawn-wide.jpg
-Source4:        korora-background-day-normalish.jpg
-Source5:        korora-background-day-standard.jpg
-Source6:        korora-background-day-wide.jpg
-Source7:        korora-background-dusk-normalish.jpg
-Source8:        korora-background-dusk-standard.jpg
-Source9:        korora-background-dusk-wide.jpg
-Source10:       korora-background-night-normalish.jpg
-Source11:       korora-background-night-standard.jpg
-Source12:       korora-background-night-wide.jpg
-Source13:       korora-background-dawn-tv-wide.jpg
-Source14:       korora-background-day-tv-wide.jpg
-Source15:       korora-background-dusk-tv-wide.jpg
-Source16:       korora-background-night-tv-wide.jpg
+Source1:        korora-background-dawn-normalish.png
+Source2:        korora-background-dawn-standard.png
+Source3:        korora-background-dawn-wide.png
+Source4:        korora-background-dawn-tv-wide.png
+Source5:        korora-background-day-normalish.png
+Source6:        korora-background-day-standard.png
+Source7:        korora-background-day-wide.png
+Source8:        korora-background-day-tv-wide.png
+Source9:        korora-background-dusk-normalish.png
+Source10:       korora-background-dusk-standard.png
+Source11:       korora-background-dusk-wide.png
+Source12:       korora-background-dusk-tv-wide.png
+Source13:       korora-background-night-normalish.png
+Source14:       korora-background-night-standard.png
+Source15:       korora-background-night-wide.png
+Source16:       korora-background-night-tv-wide.png
 Patch0:         korora-uses-day-as-default.patch
 
 Provides:       %{u_package}
@@ -86,11 +86,11 @@ Group:          Applications/Multimedia
 Provides:       %{u_package}-gnome
 Obsoletes:      %{u_package}-gnome
 
-Requires:       %{name}-animated = %{version}-%{release}
+Requires:       %{name}-base = %{version}-%{release}
 
 %description    gnome
-This package contains Gnome desktop wallpapers for the Korora
-theme.
+This package contains Gnome/Cinnamon desktop wallpapers for the
+Korora theme.
 
 %package        mate
 Summary:        Korora Wallpapers for Mate
@@ -98,7 +98,7 @@ Group:          Applications/Multimedia
 Provides:       %{u_package}-mate
 Obsoletes:      %{u_package}-mate
 
-Requires:       %{name}-animated = %{version}-%{release}
+Requires:       %{name}-base = %{version}-%{release}
 
 %description    mate
 This package contains Mate desktop wallpapers for the Korora theme.
@@ -177,26 +177,30 @@ theme.
 %prep
 %setup -q -n %{u_package}-%{version}
 
-cp %{SOURCE4} default/normalish/%{u_name}.png
-cp %{SOURCE5} default/standard/%{u_name}.png
-cp %{SOURCE6} default/wide/%{u_name}.png
-cp %{SOURCE14} default/tv-wide/%{u_name}.png
+cp %{SOURCE5}  default/normalish/%{u_name}.png
+cp %{SOURCE6}  default/standard/%{u_name}.png
+cp %{SOURCE7}  default/wide/%{u_name}.png
+cp %{SOURCE8}  default/tv-wide/%{u_name}.png
 
-cp %{SOURCE1} default/normalish/%{u_name}-00-dawn.jpg
-cp %{SOURCE2} default/standard/%{u_name}-00-dawn.jpg
-cp %{SOURCE3} default/wide/%{u_name}-00-dawn.jpg
+cp %{SOURCE1}  default/normalish/%{u_name}-00-dawn.png
+cp %{SOURCE2}  default/standard/%{u_name}-00-dawn.png
+cp %{SOURCE3}  default/wide/%{u_name}-00-dawn.png
+cp %{SOURCE4}  default/tv-wide/%{u_name}.png
 
-cp %{SOURCE4} default/normalish/%{u_name}-01-day.jpg
-cp %{SOURCE5} default/standard/%{u_name}-01-day.jpg
-cp %{SOURCE6} default/wide/%{u_name}-01-day.jpg
+cp %{SOURCE5}  default/normalish/%{u_name}-01-day.png
+cp %{SOURCE6}  default/standard/%{u_name}-01-day.png
+cp %{SOURCE7}  default/wide/%{u_name}-01-day.png
+cp %{SOURCE8}  default/tv-wide/%{u_name}.png
 
-cp %{SOURCE7} default/normalish/%{u_name}-02-dusk.jpg
-cp %{SOURCE8} default/standard/%{u_name}-02-dusk.jpg
-cp %{SOURCE9} default/wide/%{u_name}-02-dusk.jpg
+cp %{SOURCE9}  default/normalish/%{u_name}-02-dusk.png
+cp %{SOURCE10} default/standard/%{u_name}-02-dusk.png
+cp %{SOURCE11} default/wide/%{u_name}-02-dusk.png
+cp %{SOURCE12} default/tv-wide/%{u_name}.png
 
-cp %{SOURCE10} default/normalish/%{u_name}-03-night.jpg
-cp %{SOURCE11} default/standard/%{u_name}-03-night.jpg
-cp %{SOURCE12} default/wide/%{u_name}-03-night.jpg
+cp %{SOURCE13} default/normalish/%{u_name}-03-night.png
+cp %{SOURCE14} default/standard/%{u_name}-03-night.png
+cp %{SOURCE15} default/wide/%{u_name}-03-night.png
+cp %{SOURCE16} default/tv-wide/%{u_name}-03-night.png
 
 #%patch0 -p1
 
