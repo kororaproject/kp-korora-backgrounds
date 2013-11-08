@@ -108,16 +108,17 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/backgrounds/korora/default-animated/normalish
 %{_datadir}/backgrounds/korora/default-animated/standard
 %{_datadir}/backgrounds/korora/default-animated/wide
+%{_datadir}/backgrounds/korora/default-animated/tv-wide
 %{_datadir}/backgrounds/korora/default-animated/korora.xml
 
 %files kde
 %{_kde4_datadir}/wallpapers/Korora/
 
 %files gnome
-%{_datadir}/gnome-background-properties/korora.xml
+%{_datadir}/gnome-background-properties/korora-animated.xml
 
 %files mate
-%{_datadir}/mate-background-properties/korora.xml
+%{_datadir}/mate-background-properties/korora-animated.xml
 
 %files xfce
 %{_datadir}/xfce4/backdrops/korora.png
