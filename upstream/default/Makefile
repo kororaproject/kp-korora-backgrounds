@@ -22,10 +22,10 @@ install:
 	$(MKDIR) $(KORORA_DIR)/default-animated/normalish
 	$(MKDIR) $(GNOME_BG_DIR)
 	for size in normalish standard wide tv-wide; do \
-	  $(INSTALL) $${size}/korora-00-dawn.jpg		    $(KORORA_DIR)/default/$${size}/korora.jpg ; \
-	  $(LN_S) ../../default/$${size}/korora.jpg	    $(KORORA_DIR)/default-animated/$${size}/korora-01-day.jpg ; \
-	  for tod in 01-day 02-dusk 03-night; do \
-	    $(INSTALL) $${size}/korora-$${tod}.jpg 		$(KORORA_DIR)/default-animated/$${size}/korora-$${tod}.jpg ; \
+	  $(INSTALL) $${size}/korora-01-day.png		    $(KORORA_DIR)/default/$${size}/korora.png ; \
+	  $(LN_S) ../../default/$${size}/korora.png	    $(KORORA_DIR)/default-animated/$${size}/korora-01-day.png ; \
+	  for tod in 00-dawn 02-dusk 03-night; do \
+	    $(INSTALL) $${size}/korora-$${tod}.png 		$(KORORA_DIR)/default-animated/$${size}/korora-$${tod}.png ; \
 	  done; \
 	done;
 
@@ -36,16 +36,16 @@ install:
 	$(MKDIR) $(KDE_BG_DIR)/Schroedinger_Cat/contents/images
 	$(INSTALL) korora-metadata.desktop $(KDE_BG_DIR)/Schroedinger_Cat/metadata.desktop
 	for res in 640x480 800x600 1024x768 1152x864 1200x900 1280x960 1440x1080 1600x1200 1600x1280 1920x1440 2048x1536; do \
-	  $(LN_S) ../../../../backgrounds/korora/default/standard/korora.jpg \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.jpg ; \
+	  $(LN_S) ../../../../backgrounds/korora/default/standard/korora.png \
+	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
 	done;
 	for res in 1280x1024 ; do \
-	  $(LN_S) ../../../../backgrounds/korora/default/normalish/korora.jpg \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.jpg ; \
+	  $(LN_S) ../../../../backgrounds/korora/default/normalish/korora.png \
+	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
 	done;
 	for res in 800x480 1024x600 1152x720 1280x720 1280x768 1280x800 1366x768 1440x900 1680x1050 1920x1080 1920x1200 ; do \
-	  $(LN_S) ../../../../backgrounds/korora/default/wide/korora.jpg \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.jpg ; \
+	  $(LN_S) ../../../../backgrounds/korora/default/wide/korora.png \
+	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
 	done;
 
 	$(MKDIR) $(MATE_BG_DIR)
@@ -53,5 +53,5 @@ install:
 	$(INSTALL) mate-backgrounds-korora-animated.xml 		$(MATE_BG_DIR)/korora-animated.xml
 
 	$(MKDIR) $(XFCE_BG_DIR)
-	$(LN_S) ../../backgrounds/korora/default/wide/korora.jpg \
-			$(XFCE_BG_DIR)/korora.jpg
+	$(LN_S) ../../backgrounds/korora/default/wide/korora.png \
+			$(XFCE_BG_DIR)/korora.png
