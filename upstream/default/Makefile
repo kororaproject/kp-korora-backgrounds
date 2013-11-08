@@ -33,19 +33,19 @@ install:
 	#$(INSTALL) desktop-backgrounds-korora.xml 		$(GNOME_BG_DIR)/korora.xml
 	$(INSTALL) korora-animated.xml         		            $(KORORA_DIR)/default-animated/korora.xml
 	$(INSTALL) desktop-backgrounds-korora-animated.xml 		$(GNOME_BG_DIR)/korora-animated.xml
-	$(MKDIR) $(KDE_BG_DIR)/Schroedinger_Cat/contents/images
-	$(INSTALL) korora-metadata.desktop $(KDE_BG_DIR)/Schroedinger_Cat/metadata.desktop
+	$(MKDIR) $(KDE_BG_DIR)/Korora/contents/images
+	$(INSTALL) korora-metadata.desktop $(KDE_BG_DIR)/Korora/metadata.desktop
 	for res in 640x480 800x600 1024x768 1152x864 1200x900 1280x960 1440x1080 1600x1200 1600x1280 1920x1440 2048x1536; do \
 	  $(LN_S) ../../../../backgrounds/korora/default/standard/korora.png \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
+	          $(KDE_BG_DIR)/Korora/contents/images/$${res}.png ; \
 	done;
 	for res in 1280x1024 ; do \
 	  $(LN_S) ../../../../backgrounds/korora/default/normalish/korora.png \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
+	          $(KDE_BG_DIR)/Korora/contents/images/$${res}.png ; \
 	done;
 	for res in 800x480 1024x600 1152x720 1280x720 1280x768 1280x800 1366x768 1440x900 1680x1050 1920x1080 1920x1200 ; do \
 	  $(LN_S) ../../../../backgrounds/korora/default/wide/korora.png \
-	          $(KDE_BG_DIR)/Schroedinger_Cat/contents/images/$${res}.png ; \
+	          $(KDE_BG_DIR)/Korora/contents/images/$${res}.png ; \
 	done;
 
 	$(MKDIR) $(MATE_BG_DIR)

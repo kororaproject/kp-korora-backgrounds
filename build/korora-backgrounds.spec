@@ -111,7 +111,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/backgrounds/korora/default-animated/korora.xml
 
 %files kde
-%{_kde4_datadir}/wallpapers/%{U_name}/
+%{_kde4_datadir}/wallpapers/Korora/
 
 %files gnome
 %{_datadir}/gnome-background-properties/korora.xml
