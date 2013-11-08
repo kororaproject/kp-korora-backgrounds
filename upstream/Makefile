@@ -1,6 +1,6 @@
 SUBDIRS = default
 VERSION = 20.0
-NAME = heisenbug-backgrounds-$(VERSION)
+NAME = korora-backgrounds-$(VERSION)
 
 all:
 	@for i in $(SUBDIRS) ; do \

@@ -1,7 +1,3 @@
-%define u_name heisenbug
-%define U_name Heisenbug
-%define u_package heisenbug-backgrounds
-
 Name:           korora-backgrounds
 Version:        20.0
 Release:        1%{?dist}
@@ -127,5 +123,5 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/xfce4/backdrops/korora.png
 
 %changelog
-* Fri Nov 07 2013 Ian Firns <firnsy@kororaproject.org> - 20.0-1
+* Fri Nov  8 2013 Ian Firns <firnsy@kororaproject.org> - 20.0-1
 - Initial RPM release
