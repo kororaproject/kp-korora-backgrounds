@@ -3,7 +3,7 @@
 %define u_package heisenbug-backgrounds
 
 Name:           korora-backgrounds
-Version:        19.90.0
+Version:        20.0
 Release:        1%{?dist}
 Summary:        Korora desktop backgrounds
 
@@ -56,16 +56,16 @@ Obsoletes:      %{u_package}-base
 %description    base
 This package contains base images for Korora Backgrounds
 
-#%package        animated
-#Summary:        Time of day images for Korora Backgrounds
-#Group:          Applications/Multimedia
-#Provides:       %{u_package}-animated
-#Obsoletes:      %{u_package}-animated
-#
-#Requires:       %{name}-base = %{version}-%{release}
-#
-#%description    animated
-#This package contains the time of day images for Korora backgrounds
+%package        animated
+Summary:        Time of day images for Korora Backgrounds
+Group:          Applications/Multimedia
+Provides:       %{u_package}-animated
+Obsoletes:      %{u_package}-animated
+
+Requires:       %{name}-base = %{version}-%{release}
+
+%description    animated
+This package contains the time of day images for Korora backgrounds
 
 %package        kde
 Summary:        Korora Wallpapers for KDE
@@ -117,90 +117,33 @@ Requires:       xfdesktop
 This package contains XFCE4 desktop wallpapers for the Korora
 theme.
 
-#%package        extras-base
-#Summary:        Base images for Korora Extras Backrounds
-#Group:          Applications/Multimedia
-#License:        CC-BY and CC-BY-SA
-#Provides:       %{u_package}-extras-base
-#Obsoletes:      %{u_package}-extras-base
-#
-#%description    extras-base
-#This package contains base images for Korora supplemental
-#wallpapers.
-#
-#%package        extras-gnome
-#Summary:        Extra Korora Wallpapers for Gnome and Cinnamon
-#Group:          Applications/Multimedia
-#Provides:       %{u_package}-extras-gnome
-#Obsoletes:      %{u_package}-extras-gnome
-#
-#Requires:       %{name}-extras-base
-#
-#%description    extras-gnome
-#This package contains Korora supplemental wallpapers for Gnome
-#and Cinnamon
-#
-#%package        extras-mate
-#Summary:        Extra Korora Wallpapers for Mate
-#Group:          Applications/Multimedia
-#Provides:       %{u_package}-extras-mate
-#Obsoletes:      %{u_package}-extras-mate
-#
-#Requires:       %{name}-extras-base
-#
-#%description    extras-mate
-#This package contains Korora supplemental wallpapers for Mate
-#
-#%package        extras-kde
-#Summary:        Extra Korora Wallpapers for KDE
-#Group:          Applications/Multimedia
-#Provides:       %{u_package}-extras-kde
-#Obsoletes:      %{u_package}-extras-kde
-#
-#Requires:       %{name}-extras-base
-#
-#%description    extras-kde
-#This package contains Korora supplemental wallpapers for Gnome
-#
-#%package        extras-xfce
-#Summary:        Extra Korora Wallpapers for XFCE
-#Group:          Applications/Multimedia
-#Provides:       %{u_package}-extras-xfce
-#Obsoletes:      %{u_package}-extras-xfce
-#
-#Requires:       %{name}-extras-base
-#
-#%description    extras-xfce
-#This package contains Korora supplemental wallpapers for XFCE
-#
-
 %prep
 %setup -q -n %{u_package}-%{version}
 
-cp %{SOURCE5}  default/normalish/%{u_name}.png
-cp %{SOURCE6}  default/standard/%{u_name}.png
-cp %{SOURCE7}  default/wide/%{u_name}.png
-cp %{SOURCE8}  default/tv-wide/%{u_name}.png
+cp %{SOURCE5}  default/normalish/korora.png
+cp %{SOURCE6}  default/standard/korora.png
+cp %{SOURCE7}  default/wide/korora.png
+cp %{SOURCE8}  default/tv-wide/korora.png
 
-cp %{SOURCE1}  default/normalish/%{u_name}-00-dawn.png
-cp %{SOURCE2}  default/standard/%{u_name}-00-dawn.png
-cp %{SOURCE3}  default/wide/%{u_name}-00-dawn.png
-cp %{SOURCE4}  default/tv-wide/%{u_name}.png
+cp %{SOURCE1}  default/normalish/korora-00-dawn.png
+cp %{SOURCE2}  default/standard/korora-00-dawn.png
+cp %{SOURCE3}  default/wide/korora-00-dawn.png
+cp %{SOURCE4}  default/tv-wide/korora.png
 
-cp %{SOURCE5}  default/normalish/%{u_name}-01-day.png
-cp %{SOURCE6}  default/standard/%{u_name}-01-day.png
-cp %{SOURCE7}  default/wide/%{u_name}-01-day.png
-cp %{SOURCE8}  default/tv-wide/%{u_name}.png
+cp %{SOURCE5}  default/normalish/korora-01-day.png
+cp %{SOURCE6}  default/standard/korora-01-day.png
+cp %{SOURCE7}  default/wide/korora-01-day.png
+cp %{SOURCE8}  default/tv-wide/korora.png
 
-cp %{SOURCE9}  default/normalish/%{u_name}-02-dusk.png
-cp %{SOURCE10} default/standard/%{u_name}-02-dusk.png
-cp %{SOURCE11} default/wide/%{u_name}-02-dusk.png
-cp %{SOURCE12} default/tv-wide/%{u_name}.png
+cp %{SOURCE9}  default/normalish/korora-02-dusk.png
+cp %{SOURCE10} default/standard/korora-02-dusk.png
+cp %{SOURCE11} default/wide/korora-02-dusk.png
+cp %{SOURCE12} default/tv-wide/korora.png
 
-cp %{SOURCE13} default/normalish/%{u_name}-03-night.png
-cp %{SOURCE14} default/standard/%{u_name}-03-night.png
-cp %{SOURCE15} default/wide/%{u_name}-03-night.png
-cp %{SOURCE16} default/tv-wide/%{u_name}-03-night.png
+cp %{SOURCE13} default/normalish/korora-03-night.png
+cp %{SOURCE14} default/standard/korora-03-night.png
+cp %{SOURCE15} default/wide/korora-03-night.png
+cp %{SOURCE16} default/tv-wide/korora-03-night.png
 
 #%patch0 -p1
 
@@ -217,52 +160,33 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %files base
 %doc CC-BY-SA-3.0 Attribution
-%dir %{_datadir}/backgrounds/%{u_name}
-%dir %{_datadir}/backgrounds/%{u_name}/default
-%{_datadir}/backgrounds/%{u_name}/default/normalish
-%{_datadir}/backgrounds/%{u_name}/default/standard
-%{_datadir}/backgrounds/%{u_name}/default/wide
-%{_datadir}/backgrounds/%{u_name}/default/tv-wide
-%{_datadir}/backgrounds/%{u_name}/default/%{u_name}.xml
+%dir %{_datadir}/backgrounds/korora
+%dir %{_datadir}/backgrounds/korora/default
+%{_datadir}/backgrounds/korora/default/normalish
+%{_datadir}/backgrounds/korora/default/standard
+%{_datadir}/backgrounds/korora/default/wide
+%{_datadir}/backgrounds/korora/default/tv-wide
+%{_datadir}/backgrounds/korora/default/korora.xml
 
-#%files animated
-#%dir %{_datadir}/backgrounds/%{u_name}/default-animated
-#%{_datadir}/backgrounds/%{u_name}/default-animated/normalish
-#%{_datadir}/backgrounds/%{u_name}/default-animated/standard
-#%{_datadir}/backgrounds/%{u_name}/default-animated/wide
-#%{_datadir}/backgrounds/%{u_name}/default-animated/%{u_name}.xml
+%files animated
+%dir %{_datadir}/backgrounds/korora/default-animated
+%{_datadir}/backgrounds/korora/default-animated/normalish
+%{_datadir}/backgrounds/korora/default-animated/standard
+%{_datadir}/backgrounds/korora/default-animated/wide
+%{_datadir}/backgrounds/korora/default-animated/korora.xml
 
 %files kde
 %{_kde4_datadir}/wallpapers/%{U_name}/
 
 %files gnome
-%{_datadir}/gnome-background-properties/%{u_name}.xml
+%{_datadir}/gnome-background-properties/korora.xml
 
 %files mate
-%{_datadir}/mate-background-properties/%{u_name}.xml
+%{_datadir}/mate-background-properties/korora.xml
 
 %files xfce
-%{_datadir}/xfce4/backdrops/%{u_name}.png
+%{_datadir}/xfce4/backdrops/korora.png
 
-#%files extras-base
-#%doc CC-BY-SA-3.0 CC-BY-3.0 Attribution-Extras
-#%{_datadir}/backgrounds/%{u_name}/extras/*.jpg
-#%{_datadir}/backgrounds/%{u_name}/extras/*.png
-#%{_datadir}/backgrounds/%{u_name}/extras/%{u_name}-extras.xml
-#
-#%files extras-gnome
-#%{_datadir}/gnome-background-properties/%{u_name}-extras.xml
-#
-#%files extras-kde
-#%{_kde4_datadir}/wallpapers/%{U_name}_*/
-#
-#%files extras-mate
-#%{_datadir}/mate-background-properties/%{u_name}-extras.xml
-#
-#%files extras-xfce
-#%{_datadir}/xfce4/backdrops/*.jpg
-#%{_datadir}/xfce4/backdrops/*.png
-#
 %changelog
-* Mon Sep 09 2013 Martin Sourada <mso@fedoraproject.org> - 19.90.0-1
+* Fri Nov 07 2013 Ian Firns <firnsy@kororaproject.org> - 20.0-1
 - Initial rpm release
