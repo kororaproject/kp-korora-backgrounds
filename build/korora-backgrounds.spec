@@ -98,7 +98,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %doc
 
 %files base
-%doc CC-BY-SA-3.0 Attribution
+#%doc CC-BY-SA-3.0 Attribution
 %dir %{_datadir}/backgrounds/korora
 %dir %{_datadir}/backgrounds/korora/default
 %{_datadir}/backgrounds/korora/default/normalish
