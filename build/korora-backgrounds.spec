@@ -43,7 +43,7 @@ This package contains the time of day images for Korora backgrounds
 Summary:        Korora Wallpapers for KDE
 Group:          Applications/Multimedia
 
-Requires:       %{name}-base = %{version}-%{release}
+Requires:       %{name}-animated = %{version}-%{release}
 Requires:       kde-filesystem
 
 %description    kde
@@ -54,7 +54,7 @@ theme.
 Summary:        Korora Wallpapers for Gnome
 Group:          Applications/Multimedia
 
-Requires:       %{name}-base = %{version}-%{release}
+Requires:       %{name}-animated = %{version}-%{release}
 
 %description    gnome
 This package contains Gnome/Cinnamon desktop wallpapers for the
@@ -64,7 +64,7 @@ Korora theme.
 Summary:        Korora Wallpapers for Mate
 Group:          Applications/Multimedia
 
-Requires:       %{name}-base = %{version}-%{release}
+Requires:       %{name}-animated = %{version}-%{release}
 
 %description    mate
 This package contains Mate desktop wallpapers for the Korora theme.
