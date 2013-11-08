@@ -2,8 +2,8 @@
 <!DOCTYPE wallpapers SYSTEM "mate-wp-list.dtd">
 <wallpapers>
     <wallpaper deleted="false">
-        <name>Heisenbug</name>
-        <filename>/usr/share/backgrounds/heisenbug/default/heisenbug.xml</filename>
+        <name>Korora</name>
+        <filename>/usr/share/backgrounds/korora/default/korora.xml</filename>
         <options>stretched</options>
     </wallpaper>
 </wallpapers>
