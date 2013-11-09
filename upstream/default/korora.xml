@@ -11,13 +11,13 @@
 <duration>10000000000.0</duration>
 <file>
 	<!-- Wide 16:9 -->
-	<size width="1920" height="1080">/usr/share/backgrounds/heisenbug/default/tv-wide/heisenbug.png</size>
+	<size width="1920" height="1080">/usr/share/backgrounds/korora/default/tv-wide/korora.png</size>
 	<!-- Wide 16:10 -->
-	<size width="1920" height="1200">/usr/share/backgrounds/heisenbug/default/wide/heisenbug.png</size>
+	<size width="1920" height="1200">/usr/share/backgrounds/korora/default/wide/korora.png</size>
 	<!-- Standard 4:3 -->
-	<size width="2048" height="1536">/usr/share/backgrounds/heisenbug/default/standard/heisenbug.png</size>
+	<size width="2048" height="1536">/usr/share/backgrounds/korora/default/standard/korora.png</size>
 	<!-- Normalish 5:4 -->
-	<size width="1280" height="1024">/usr/share/backgrounds/heisenbug/default/normalish/heisenbug.png</size>
+	<size width="1280" height="1024">/usr/share/backgrounds/korora/default/normalish/korora.png</size>
 </file>
 </static>
 

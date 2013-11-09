@@ -1,6 +1,6 @@
 Name:           korora-backgrounds
 Version:        20.0
-Release:        1%{?dist}
+Release:        1%{?dist}.1
 Summary:        Korora desktop backgrounds
 
 Group:          Applications/Multimedia
