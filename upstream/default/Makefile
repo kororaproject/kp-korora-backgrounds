@@ -3,7 +3,6 @@ GNOME_BG_DIR=$(DESTDIR)/usr/share/gnome-background-properties
 KDE_BG_DIR=$(DESTDIR)/usr/share/wallpapers/
 MATE_BG_DIR=$(DESTDIR)/usr/share/mate-background-properties
 XFCE_BG_DIR=$(DESTDIR)/usr/share/xfce4/backdrops
-
 INKSCAPE=/usr/bin/inkscape
 MKDIR=/bin/mkdir -p
 INSTALL=/usr/bin/install -p -m644 -D
@@ -49,8 +48,8 @@ install:
 	done;
 
 	$(MKDIR) $(MATE_BG_DIR)
-	#$(INSTALL) mate-backgrounds-korora.xml 		$(MATE_BG_DIR)/korora.xml
-	$(INSTALL) mate-backgrounds-korora-animated.xml 		$(MATE_BG_DIR)/korora-animated.xml
+	$(INSTALL) mate-backgrounds-korora.xml 		$(MATE_BG_DIR)/korora.xml
+	#$(INSTALL) mate-backgrounds-korora-animated.xml 		$(MATE_BG_DIR)/korora-animated.xml
 
 	$(MKDIR) $(XFCE_BG_DIR)
 	$(LN_S) ../../backgrounds/korora/default/wide/korora.png \
