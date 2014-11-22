@@ -1,5 +1,5 @@
 Name:           korora-backgrounds
-Version:        20.0
+Version:        21.0
 Release:        1%{?dist}.1
 Summary:        Korora desktop backgrounds
 
@@ -124,5 +124,8 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/xfce4/backdrops/korora.png
 
 %changelog
+* Fri Nov  8 2013 Ian Firns <firnsy@kororaproject.org> - 21.0-1
+- Updated for 21 release.
+
 * Fri Nov  8 2013 Ian Firns <firnsy@kororaproject.org> - 20.0-1
 - Initial RPM release
