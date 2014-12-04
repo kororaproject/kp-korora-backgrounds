@@ -48,8 +48,8 @@ install:
 	done;
 
 	$(MKDIR) $(MATE_BG_DIR)
-	$(INSTALL) mate-backgrounds-korora.xml 		$(MATE_BG_DIR)/korora.xml
-	#$(INSTALL) mate-backgrounds-korora-animated.xml 		$(MATE_BG_DIR)/korora-animated.xml
+	#$(INSTALL) mate-backgrounds-korora.xml 		$(MATE_BG_DIR)/korora.xml
+	$(INSTALL) mate-backgrounds-korora-animated.xml 		$(MATE_BG_DIR)/korora-animated.xml
 
 	$(MKDIR) $(XFCE_BG_DIR)
 	$(LN_S) ../../backgrounds/korora/default/wide/korora.png \
