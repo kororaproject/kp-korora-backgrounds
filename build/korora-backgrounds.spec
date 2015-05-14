@@ -2,7 +2,7 @@
 %global Bg_Name Korora
 
 Name:           korora-backgrounds
-Version:        21.0.0
+Version:        21.0.1
 Release:        1%{?dist}.1
 Summary:        Korora default desktop background
 
@@ -128,8 +128,11 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/xfce4/backdrops/%{bgname}.png
 
 %changelog
+* Sun Dec 28 2014 Ian Firns <firnsy@kororaproject.org> - 21.0.1-1
+- Fixed incorrect backgrounds
+
 * Fri Nov 14 2014 Ian Firns <firnsy@kororaproject.org> - 21.0.0-1
-- Updates for the 21 release.
+- Updates for the 21 release
 
 * Fri Nov  8 2013 Ian Firns <firnsy@kororaproject.org> - 20.0-1
 - Initial RPM release
