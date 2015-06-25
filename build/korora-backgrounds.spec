@@ -1,6 +1,9 @@
 %global bgname korora
 %global Bg_Name Korora
 
+# Extras will be enabled later
+%global with_extras 0
+
 Name:           korora-backgrounds
 Version:        22.0.1
 Release:        1%{?dist}.1
@@ -78,50 +81,50 @@ default theme.
 
 %if %{with_extras}
 %package        extras-base
-Summary:        Base images for F22 Extras Backrounds
+Summary:        Base images for Korora Extras Backrounds
 Group:          Applications/Multimedia
 License:        CC-BY and CC-BY-SA
 
 %description    extras-base
-This package contains base images for F22 supplemental
+This package contains base images for Korora supplemental
 wallpapers.
 
 %package        extras-gnome
-Summary:        Extra F22 Wallpapers for Gnome and Cinnamon
+Summary:        Extra Korora Wallpapers for Gnome and Cinnamon
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-base
 
 %description    extras-gnome
-This package contains F22 supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for Gnome
 and Cinnamon
 
 %package        extras-mate
-Summary:        Extra F22 Wallpapers for Mate
+Summary:        Extra Korora Wallpapers for Mate
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-base
 
 %description    extras-mate
-This package contains F22 supplemental wallpapers for Mate
+This package contains Korora supplemental wallpapers for Mate
 
 %package        extras-kde
-Summary:        Extra F22 Wallpapers for KDE
+Summary:        Extra Korora Wallpapers for KDE
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-base
 
 %description    extras-kde
-This package contains F22 supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for Gnome
 
 %package        extras-xfce
-Summary:        Extra F22 Wallpapers for XFCE
+Summary:        Extra Korora Wallpapers for XFCE
 Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-base
 
 %description    extras-xfce
-This package contains F22 supplemental wallpapers for XFCE
+This package contains Korora supplemental wallpapers for XFCE
 %endif
 
 %prep
