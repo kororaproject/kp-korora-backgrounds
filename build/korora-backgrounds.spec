@@ -2,11 +2,11 @@
 %global Bg_Name Korora
 
 # Extras will be enabled later
-%global with_extras 0
+%global with_extras 1
 
 Name:           korora-backgrounds
-Version:        22.0.1
-Release:        1%{?dist}.1
+Version:        22.1
+Release:        1%{?dist}
 Summary:        Korora default desktop background
 
 Group:          Applications/Multimedia
@@ -132,7 +132,7 @@ This package contains Korora supplemental wallpapers for XFCE
 
 
 %build
-make %{?_smp_mflags}
+make
 
 
 %install
@@ -185,6 +185,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Sat Jul 25 2015 Ian Firns <firnsy@kororaproject.org> - 22.1-1
+- Added extras based on f21
+
 * Thu Jun 25 2015 Ian Firns <firnsy@kororaproject.org> - 22.0.1-1
 - Updates for the 22 release
 

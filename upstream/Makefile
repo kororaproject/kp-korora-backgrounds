@@ -1,5 +1,5 @@
-SUBDIRS = default
-VERSION = 20.0
+SUBDIRS = default extras
+VERSION = 22.0
 NAME = korora-backgrounds-$(VERSION)
 
 all:
@@ -14,13 +14,14 @@ install:
 
 dist:
 	mkdir -p $(NAME)
-	#cp -a CC-BY-SA-3.0 $(NAME)
-	#~ cp -a CC-BY-3.0 $(NAME)
-	#cp -a Attribution $(NAME)
-	#~ cp -a Attribution-Extras $(NAME)
+	cp -a CC-BY-SA-3.0 $(NAME)
+	cp -a CC-BY-3.0 $(NAME)
+	cp -a CC0-1.0 $(NAME)
+	cp -a Attribution $(NAME)
+	cp -a Attribution-Extras $(NAME)
 	cp -a Makefile $(NAME)
 	cp -a default $(NAME)
-	#cp -a extras $(NAME)
+	cp -a extras $(NAME)
 	tar -c --xz -f $(NAME).tar.xz $(NAME)
 	rm -rf $(NAME)
 
