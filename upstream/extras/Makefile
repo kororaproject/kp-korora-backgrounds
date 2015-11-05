@@ -7,22 +7,22 @@ MKDIR=/bin/mkdir -p
 INSTALL=/usr/bin/install -p -m644 -D
 LN_S=/bin/ln -s
 
-THEMES_JPG=beautiful-colourful-houses-in-the-netherlands\
-	corn\
-	water-drop-close-up\
-	laguna-del-inca\
-	small-river-shot-in-beatifull-high-dynamic-range-with-great-colours\
-	miami-nightlife\
-	seychelles-dream\
-	dandelion\
-	colza\
-	florida-coast\
-	balloons-aloft
-THEMES_PNG=abstract-lines\
-	machu-picchu-panorama\
-	gardalini\
-	baatara-sinkhole\
-	blue-windmill
+THEMES_JPG=fog\
+	aloe-bursting\
+	the-black-pharaohs\
+	moscow-in-night\
+	sky
+THEMES_PNG=cairn-at-quoddy\
+	the-waterfall\
+	flame-robin-at-woodlands\
+	blue-dream-1\
+	blue-dream-2\
+	close-up-of-a-flower\
+	dawn-panama-cinta-costera\
+	the-moon\
+	momiji\
+	night\
+	genesee-river-lighthouse
 
 all:
 

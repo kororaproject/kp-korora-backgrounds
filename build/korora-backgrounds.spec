@@ -1,15 +1,15 @@
-%global bgname korora
+%global relnum 23
 %global Bg_Name Korora
+%global bgname korora
 
-# Extras will be enabled later
+# Enable Extras
 %global with_extras 1
 
 Name:           korora-backgrounds
-Version:        22.1
-Release:        1%{?dist}
+Version:        23.1.0
+Release:        2%{?dist}.2
 Summary:        Korora default desktop background
 
-Group:          Applications/Multimedia
 License:        CC-BY-SA
 URL:            https://github.com/kororaproject/kp-korora-backgrounds
 Source0:        %{name}-%{version}.tar.gz
@@ -23,108 +23,120 @@ Requires:       %{name}-kde = %{version}-%{release}
 Requires:       %{name}-xfce = %{version}-%{release}
 Requires:       %{name}-mate = %{version}-%{release}
 
+Provides:       f%{relnum}-backgrounds
+Obsoletes:      f%{relnum}-backgrounds
 
 %description
-This package contains desktop backgrounds for the Korora 22 default theme.
-Pulls in themes for GNOME, KDE, Mate and Xfce desktops.
+This package contains desktop backgrounds for the Korora %{relnum} default
+theme. Pulls in themes for GNOME, KDE, Mate and Xfce desktops.
 
 %package        base
-Summary:        Base images for Korora 22 default background
-Group:          Applications/Multimedia
+Summary:        Base images for Korora %{relnum} default background
 License:        CC-BY-SA
+Provides:       f%{relnum}-backgrounds-base
+Obsoletes:      f%{relnum}-backgrounds-base
 
 %description    base
-This package contains base images for Korora 22 default background.
+This package contains base images for Korora %{relnum} default background.
 
 
 %package        kde
-Summary:        Korora 22 default wallpaper for KDE
-Group:          Applications/Multimedia
+Summary:        Korora %{relnum} default wallpaper for KDE
 
 Requires:       %{name}-base = %{version}-%{release}
 Requires:       kde-filesystem
+Provides:       f%{relnum}-backgrounds-kde
+Obsoletes:      f%{relnum}-backgrounds-kde
 
 %description    kde
-This package contains KDE desktop wallpaper for the Korora 22
+This package contains KDE desktop wallpaper for the Korora %{relnum}
 default theme.
 
 %package        gnome
-Summary:        Korora 22 default wallpaper for Gnome and Cinnamon
-Group:          Applications/Multimedia
+Summary:        Korora %{relnum} default wallpaper for Gnome and Cinnamon
 
 Requires:       %{name}-base = %{version}-%{release}
+Provides:       f%{relnum}-backgrounds-gnome
+Obsoletes:      f%{relnum}-backgrounds-gnome
 
 %description    gnome
-This package contains Gnome/Cinnamon desktop wallpaper for the
-Korora 22 default theme.
+This package contains GNOME/Cinnamon desktop wallpaper for the
+Korora %{relnum} default theme.
 
 %package        mate
-Summary:        Korora 22 default wallpaper for Mate
-Group:          Applications/Multimedia
+Summary:        Korora %{relnum} default wallpaper for Mate
 
 Requires:       %{name}-base = %{version}-%{release}
+Provides:       f%{relnum}-backgrounds-mate
+Obsoletes:      f%{relnum}-backgrounds-mate
 
 %description    mate
-This package contains Mate desktop wallpaper for the Korora 22
+This package contains MATE desktop wallpaper for the Korora %{relnum}
 default theme.
 
 %package        xfce
-Summary:        Korora 22 default background for XFCE4
-Group:          Applications/Multimedia
+Summary:        Korora 22 default background for Xfce4
 
 Requires:       %{name}-base = %{version}-%{release}
 Requires:       xfdesktop
+Provides:       f%{relnum}-backgrounds-xfce
+Obsoletes:      f%{relnum}-backgrounds-xfce
 
 %description    xfce
-This package contains XFCE4 desktop background for the Korora 22
+This package contains Xfce4 desktop background for the Korora 22
 default theme.
 
 %if %{with_extras}
 %package        extras-base
 Summary:        Base images for Korora Extras Backrounds
-Group:          Applications/Multimedia
 License:        CC-BY and CC-BY-SA
+Provides:       f%{relnum}-backgrounds-extras-base
+Obsoletes:      f%{relnum}-backgrounds-extras-base
 
 %description    extras-base
 This package contains base images for Korora supplemental
 wallpapers.
 
 %package        extras-gnome
-Summary:        Extra Korora Wallpapers for Gnome and Cinnamon
-Group:          Applications/Multimedia
+Summary:        Extra Korora Wallpapers for GNOME and Cinnamon
 
 Requires:       %{name}-extras-base
+Provides:       f%{relnum}-backgrounds-extras-gnome
+Obsoletes:      f%{relnum}-backgrounds-extras-gnome
 
 %description    extras-gnome
-This package contains Korora supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for GNOME
 and Cinnamon
 
 %package        extras-mate
-Summary:        Extra Korora Wallpapers for Mate
-Group:          Applications/Multimedia
+Summary:        Extra Korora Wallpapers for MATE
 
 Requires:       %{name}-extras-base
+Provides:       f%{relnum}-backgrounds-extras-mate
+Obsoletes:      f%{relnum}-backgrounds-extras-mate
 
 %description    extras-mate
-This package contains Korora supplemental wallpapers for Mate
+This package contains Korora supplemental wallpapers for MATE
 
 %package        extras-kde
 Summary:        Extra Korora Wallpapers for KDE
-Group:          Applications/Multimedia
 
 Requires:       %{name}-extras-base
+Provides:       f%{relnum}-backgrounds-extras-kde
+Obsoletes:      f%{relnum}-backgrounds-extras-kde
 
 %description    extras-kde
-This package contains Korora supplemental wallpapers for Gnome
+This package contains Korora supplemental wallpapers for GNOME
 
 %package        extras-xfce
-Summary:        Extra Korora Wallpapers for XFCE
-Group:          Applications/Multimedia
+Summary:        Extra Korora Wallpapers for Xfce
 
 Requires:       %{name}-extras-base
+Provides:       f%{relnum}-backgrounds-extras-xfce
+Obsoletes:      f%{relnum}-backgrounds-extras-xfce
 
 %description    extras-xfce
-This package contains Korora supplemental wallpapers for XFCE
+This package contains Korora supplemental wallpapers for Xfce
 %endif
 
 %prep
@@ -132,19 +144,24 @@ This package contains Korora supplemental wallpapers for XFCE
 
 
 %build
-make
+make %{?_smp_mflags}
 
 
 %install
 make install DESTDIR=$RPM_BUILD_ROOT
+ln -sf %{bgname} $RPM_BUILD_ROOT/%{_datadir}/backgrounds/f%{relnum}
+ln -sf %{bgname}.xml $RPM_BUILD_ROOT/%{_datadir}/backgrounds/%{bgname}/default/f%{relnum}.xml
+ln -sf %{bgname}-extras.xml $RPM_BUILD_ROOT/%{_datadir}/backgrounds/%{bgname}/extras/f%{relnum}-extras.xml
 
 %files
 %doc
 
 %files base
-%doc CC-BY-SA-3.0 Attribution
+%license CC-BY-SA-3.0 Attribution
 %dir %{_datadir}/backgrounds/%{bgname}
 %dir %{_datadir}/backgrounds/%{bgname}/default
+%{_datadir}/backgrounds/f%{relnum}
+%{_datadir}/backgrounds/%{bgname}/default/f%{relnum}.xml
 %{_datadir}/backgrounds/%{bgname}/default/normalish
 %{_datadir}/backgrounds/%{bgname}/default/standard
 %{_datadir}/backgrounds/%{bgname}/default/wide
@@ -165,10 +182,11 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %if %{with_extras}
 %files extras-base
-%doc CC-BY-SA-3.0 CC-BY-3.0 CC0-1.0 Attribution-Extras
+%license CC-BY-SA-3.0 CC-BY-3.0 CC0-1.0 FAL-1.3 Attribution-Extras
 %{_datadir}/backgrounds/%{bgname}/extras/*.jpg
 %{_datadir}/backgrounds/%{bgname}/extras/*.png
 %{_datadir}/backgrounds/%{bgname}/extras/%{bgname}-extras.xml
+%{_datadir}/backgrounds/%{bgname}/extras/f%{relnum}-extras.xml
 
 %files extras-gnome
 %{_datadir}/gnome-background-properties/%{bgname}-extras.xml
@@ -185,6 +203,12 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu Nov 5 2015 Chris Smart <csmart@kororaproject.org> - 23.1-2
+- Provide and replace Fedora's backgrounds
+
+* Wed Nov 4 2015 Chris Smart <csmart@kororaproject.org> - 23.1-1
+- Update for Korora 23
+
 * Sat Jul 25 2015 Ian Firns <firnsy@kororaproject.org> - 22.1-1
 - Added extras based on f21
 

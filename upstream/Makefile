@@ -1,6 +1,6 @@
 SUBDIRS = default extras
-VERSION = 22.0
-NAME = korora-backgrounds-$(VERSION)
+VERSION = 23.1.0
+NAME =  korora-backgrounds-$(VERSION)
 
 all:
 	@for i in $(SUBDIRS) ; do \
@@ -17,6 +17,7 @@ dist:
 	cp -a CC-BY-SA-3.0 $(NAME)
 	cp -a CC-BY-3.0 $(NAME)
 	cp -a CC0-1.0 $(NAME)
+	cp -a FAL-1.3 $(NAME)
 	cp -a Attribution $(NAME)
 	cp -a Attribution-Extras $(NAME)
 	cp -a Makefile $(NAME)

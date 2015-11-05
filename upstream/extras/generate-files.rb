@@ -1,8 +1,8 @@
 # dnf install rubygem-i18n html2text wget
 require "i18n"
 
-WNAME = 'korora'
-WNAME_FULL = 'Korora'
+WNAME = 'f23'
+WNAME_FULL = 'F23'
 
 # load authors' info from prepared file
 authors = {}
@@ -18,6 +18,7 @@ theme = {}
 licences = {}
 themes = []
 
+I18n.config.available_locales = :en
 file = File.new("themes.list", "r")
 while (line = file.gets)
   tmp = line.chomp.sub(/ by /,', ').split(", ")
@@ -25,7 +26,7 @@ while (line = file.gets)
   theme[:filename] = I18n.transliterate(tmp[0].downcase.gsub(' ','-'))
   theme[:author] = tmp[1]
   theme[:fas] = authors[theme[:author]]
-  theme[:mail] = "#{theme[:fas]} AT kororaproject DOT org"
+  theme[:mail] = "#{theme[:fas]} AT fedoraproject DOT org"
   theme[:licence] = tmp[2]
   licence = theme[:licence].sub('CC0','publicdomain/zero').sub('CC-','licences/').split(' ').join('/').downcase
   url = "http://creativecommons.org/#{licence}/legalcode"
@@ -56,9 +57,9 @@ f_slideshow_xml = File.new("#{WNAME}-extras.xml", 'w')
 f_slideshow_xml.puts <<EOF
 <background>
   <starttime>
-    <year>2014</year>
-    <month>10</month>
-    <day>30</day>
+    <year>2015</year>
+    <month>05</month>
+    <day>26</day>
     <hour>00</hour>
     <minute>00</minute>
     <second>00</second>
@@ -118,7 +119,7 @@ Licence: #{theme[:licence]}
         <options>zoom</options>
 
         <author>#{theme[:author]}</author>
-        <email>team@kororaproject.org</email>
+        <email>design-team@lists.fedoraproject.org</email>
         <license>#{theme[:licence]}</license>
     </wallpaper>
 
@@ -132,7 +133,7 @@ Licence: #{theme[:licence]}
 Name=#{theme[:name]} (#{WNAME_FULL} Supplemental)
 X-KDE-PluginInfo-Name=#{theme[:name]} (#{WNAME_FULL} Supplemental)
 X-KDE-PluginInfo-Author=#{theme[:author]}
-X-KDE-PluginInfo-Email=team@kororaproject.org
+X-KDE-PluginInfo-Email=fedora-design@lists.fedoraproject.org
 X-KDE-PluginInfo-License=#{theme[:licence]}
   EOF
   f_desktop.close
