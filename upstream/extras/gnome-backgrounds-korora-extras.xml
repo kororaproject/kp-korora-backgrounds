@@ -2,169 +2,169 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
     <wallpaper deleted="false">
-        <name>Korora Supplemental Wallpapers Slideshow</name>
-        <filename>/usr/share/backgrounds/korora/extras/korora-extras.xml</filename>
+        <name>F24 Supplemental Wallpapers Slideshow</name>
+        <filename>/usr/share/backgrounds/f24/extras/f24-extras.xml</filename>
         <options>zoom</options>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>Cairn at Quoddy (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/cairn-at-quoddy.png</filename>
+        <name>Aurora over Iceland (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/aurora-over-iceland.png </filename>
         <options>zoom</options>
 
-        <author>anyjdoe3713</author>
+        <author>Helena Bartosova</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>The Waterfall (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/the-waterfall.png</filename>
+        <name>Sunrise in Florida II (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/sunrise-in-florida-ii.png</filename>
         <options>zoom</options>
 
-        <author>Vineet Tuli</author>
+        <author>afsilva</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>Fog (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/fog.jpg</filename>
+        <name>old railroad (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/old-railroad.png</filename>
         <options>zoom</options>
 
-        <author>Ondra Brém</author>
+        <author>nask0</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>Aloe Bursting (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/aloe-bursting.jpg</filename>
+        <name>Jellyfish (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/jellyfish.jpg</filename>
         <options>zoom</options>
 
-        <author>Greg Holden</author>
+        <author>Allan Lyngby Lassen</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>Flame Robin at Woodlands (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/flame-robin-at-woodlands.png</filename>
+        <name>Lady Musgrave Blue (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/lady-musgrave-blue.png</filename>
         <options>zoom</options>
 
-        <author>aviceda</author>
+        <author>Lyle Wang</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>The Black Pharaohs (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/the-black-pharaohs.jpg</filename>
+        <name>Argentina Glacier (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/argentina-glacier.jpg</filename>
         <options>zoom</options>
 
-        <author>Retlaw Snellac Photography</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>blue dream-1 (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/blue-dream-1.png</filename>
-        <options>zoom</options>
-
-        <author>ali4129</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Moscow in night (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/moscow-in-night.jpg</filename>
-        <options>zoom</options>
-
-        <author>ignatenkobrain</author>
+        <author>wesleyotugo</author>
         <email>design-team@lists.fedoraproject.org</email>
         <license>CC0 1.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>Sky (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/sky.jpg</filename>
+        <name>Iceberg in greenland (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/iceberg-in-greenland.jpg</filename>
         <options>zoom</options>
 
-        <author>dorivalboegejr</author>
+        <author>lhirlimann</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
     <wallpaper deleted="false">
-        <name>blue dream-2 (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/blue-dream-2.png</filename>
+        <name>Paisaje (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/paisaje.jpg</filename>
+        <options>zoom</options>
+
+        <author>diegoestrada</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC0 1.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Tree in Winter (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/tree-in-winter.jpg</filename>
+        <options>zoom</options>
+
+        <author>Franz Dietrich</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Ice Lake (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/ice-lake.png</filename>
+        <options>zoom</options>
+
+        <author>Oscar Osta</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>mistogan (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/mistogan.jpg</filename>
+        <options>zoom</options>
+
+        <author>espasmo</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC0 1.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>By the lake (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/by-the-lake.jpg</filename>
+        <options>zoom</options>
+
+        <author>http://zoommyapp.com</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC0 1.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Blue Deep (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/blue-deep.png</filename>
+        <options>zoom</options>
+
+        <author>alyaj2a</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>Free Art 1.3</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>zen (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/zen.png</filename>
+        <options>zoom</options>
+
+        <author>hhlp</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Morning Dew on Leaves (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/morning-dew-on-leaves.png</filename>
+        <options>zoom</options>
+
+        <author>sethtrei</author>
+        <email>design-team@lists.fedoraproject.org</email>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>waves (F24 Supplemental)</name>
+        <filename>/usr/share/backgrounds/f24/extras/waves.png</filename>
         <options>zoom</options>
 
         <author>ali4129</author>
         <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Close Up of a Flower (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/close-up-of-a-flower.png</filename>
-        <options>zoom</options>
-
-        <author>Vineet Tuli</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Dawn Panama Cinta Costera (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/dawn-panama-cinta-costera.png</filename>
-        <options>zoom</options>
-
-        <author>lbazan</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>The Moon (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/the-moon.png</filename>
-        <options>zoom</options>
-
-        <author>Vineet Tuli</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Momiji (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/momiji.png</filename>
-        <options>zoom</options>
-
-        <author>dking</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY 3.0</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Night (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/night.png</filename>
-        <options>zoom</options>
-
-        <author>Sebastian Bota</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>FAL 1.3</license>
-    </wallpaper>
-
-    <wallpaper deleted="false">
-        <name>Genesee River Lighthouse (Korora Supplemental)</name>
-        <filename>/usr/share/backgrounds/korora/extras/genesee-river-lighthouse.png</filename>
-        <options>zoom</options>
-
-        <author>jsmith</author>
-        <email>design-team@lists.fedoraproject.org</email>
-        <license>CC-BY-SA 3.0</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
 
 </wallpapers>

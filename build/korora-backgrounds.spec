@@ -5,9 +5,9 @@
 # Enable Extras
 %global with_extras 1
 
-Name:           korora-backgrounds
-Version:        24.0
-Release:        1%{?dist}
+Name:           %{bgname}-backgrounds
+Version:        %{relnum}
+Release:        2%{?dist}
 Summary:        Korora default desktop background
 
 License:        CC-BY-SA
@@ -18,6 +18,7 @@ BuildArch:      noarch
 
 # for %%_kde4_* macros
 BuildRequires:  kde-filesystem
+
 Requires:       %{name}-gnome = %{version}-%{release}
 Requires:       %{name}-kde = %{version}-%{release}
 Requires:       %{name}-xfce = %{version}-%{release}
@@ -149,19 +150,14 @@ make %{?_smp_mflags}
 
 %install
 make install DESTDIR=$RPM_BUILD_ROOT
-#ln -sf %{bgname} $RPM_BUILD_ROOT/%{_datadir}/backgrounds/f%{relnum}
-#ln -sf %{bgname}.xml $RPM_BUILD_ROOT/%{_datadir}/backgrounds/%{bgname}/default/f%{relnum}.xml
-#ln -sf %{bgname}-extras.xml $RPM_BUILD_ROOT/%{_datadir}/backgrounds/%{bgname}/extras/f%{relnum}-extras.xml
 
 %files
 %doc
 
 %files base
-%license CC-BY-SA-3.0 Attribution
+%license CC-BY-SA-4.0 Attribution
 %dir %{_datadir}/backgrounds/%{bgname}
 %dir %{_datadir}/backgrounds/%{bgname}/default
-#%{_datadir}/backgrounds/f%{relnum}
-#%{_datadir}/backgrounds/%{bgname}/default/f%{relnum}.xml
 %{_datadir}/backgrounds/%{bgname}/default/normalish
 %{_datadir}/backgrounds/%{bgname}/default/standard
 %{_datadir}/backgrounds/%{bgname}/default/wide
@@ -182,11 +178,10 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %if %{with_extras}
 %files extras-base
-%license CC-BY-SA-3.0 CC-BY-3.0 CC0-1.0 FAL-1.3 Attribution-Extras
+%license CC-BY-SA-4.0 CC-BY-3.0 CC0-1.0 FAL-1.3 Attribution-Extras
 %{_datadir}/backgrounds/%{bgname}/extras/*.jpg
 %{_datadir}/backgrounds/%{bgname}/extras/*.png
 %{_datadir}/backgrounds/%{bgname}/extras/%{bgname}-extras.xml
-#%{_datadir}/backgrounds/%{bgname}/extras/f%{relnum}-extras.xml
 
 %files extras-gnome
 %{_datadir}/gnome-background-properties/%{bgname}-extras.xml
@@ -203,6 +198,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Wed Jul 13 2016 Ian Firns <firnsy@kororaproject.org> - 24.0-2
+- Updated images including community contributions.
+
 * Thu May 12 2016 Chris Smart <csmart@kororaproject.org> - 24.0-1
 - Update for Korora 24
 

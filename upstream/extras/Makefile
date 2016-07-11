@@ -7,22 +7,22 @@ MKDIR=/bin/mkdir -p
 INSTALL=/usr/bin/install -p -m644 -D
 LN_S=/bin/ln -s
 
-THEMES_JPG=fog\
-	aloe-bursting\
-	the-black-pharaohs\
-	moscow-in-night\
-	sky
-THEMES_PNG=cairn-at-quoddy\
-	the-waterfall\
-	flame-robin-at-woodlands\
-	blue-dream-1\
-	blue-dream-2\
-	close-up-of-a-flower\
-	dawn-panama-cinta-costera\
-	the-moon\
-	momiji\
-	night\
-	genesee-river-lighthouse
+THEMES_JPG=jellyfish\
+	argentina-glacier\
+	iceberg-in-greenland\
+	paisaje\
+	tree-in-winter\
+	mistogan\
+	by-the-lake
+THEMES_PNG=aurora-over-iceland\
+	sunrise-in-florida-ii\
+	old-railroad\
+	lady-musgrave-blue\
+	ice-lake\
+	blue-deep\
+	zen\
+	morning-dew-on-leaves\
+	waves
 
 all:
 

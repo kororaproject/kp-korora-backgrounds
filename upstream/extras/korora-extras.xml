@@ -7,85 +7,70 @@
     <minute>00</minute>
     <second>00</second>
   </starttime>
-
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/cairn-at-quoddy.png</file>
+    <file>/usr/share/backgrounds/korora/extras/tree-in-winter.jpg</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/morning-dew-on-leaves.png</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/aurora-over-iceland.png</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/by-the-lake.jpg</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/iceberg-in-greenland.jpg</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/argentina-glacier.jpg</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/sunrise-in-florida-ii.png</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/ice-lake.png</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/jellyfish.jpg</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/old-railroad.png</file>
+  </static>
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/zen.png</file>
   </static>
 
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/the-waterfall.png</file>
+    <file>/usr/share/backgrounds/korora/extras/mistogan.jpg</file>
   </static>
 
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/fog.jpg</file>
+    <file>/usr/share/backgrounds/korora/extras/lady-musgrave-blue.png</file>
   </static>
-
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/aloe-bursting.jpg</file>
+    <file>/usr/share/backgrounds/korora/extras/paisaje.jpg</file>
   </static>
-
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/flame-robin-at-woodlands.png</file>
+    <file>/usr/share/backgrounds/korora/extras/waves.png</file>
   </static>
-
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/the-black-pharaohs.jpg</file>
+    <file>/usr/share/backgrounds/korora/extras/blue-deep.png</file>
   </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/blue-dream-1.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/moscow-in-night.jpg</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/sky.jpg</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/blue-dream-2.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/close-up-of-a-flower.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/dawn-panama-cinta-costera.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/the-moon.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/momiji.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/night.png</file>
-  </static>
-
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/genesee-river-lighthouse.png</file>
-  </static>
-
 </background>

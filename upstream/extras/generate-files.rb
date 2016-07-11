@@ -1,8 +1,8 @@
 # dnf install rubygem-i18n html2text wget
 require "i18n"
 
-WNAME = 'f23'
-WNAME_FULL = 'F23'
+WNAME = 'f24'
+WNAME_FULL = 'F24'
 
 # load authors' info from prepared file
 authors = {}
@@ -28,8 +28,13 @@ while (line = file.gets)
   theme[:fas] = authors[theme[:author]]
   theme[:mail] = "#{theme[:fas]} AT fedoraproject DOT org"
   theme[:licence] = tmp[2]
-  licence = theme[:licence].sub('CC0','publicdomain/zero').sub('CC-','licences/').split(' ').join('/').downcase
-  url = "http://creativecommons.org/#{licence}/legalcode"
+  if (theme[:licence] == "Free Art")
+    licence = theme[:licence].sub('Free Art','licence/lal').split(' ').join('/').downcase
+    url = "http://artlibre.org/#{licence}/en/"
+  else
+    licence = theme[:licence].sub('CC0','publicdomain/zero').sub('CC-','licences/').split(' ').join('/').downcase
+    url = "http://creativecommons.org/#{licence}/legalcode"
+  end
   licences[theme[:licence]] = url
   theme[:ext] = tmp[3]
   theme[:filename] << ".#{theme[:ext]}"
@@ -40,13 +45,24 @@ file.close
 # generate licence files
 licences.each do |name, url|
   filename = name.sub(' ','-')
-  unless File.exists?("../#{filename}")
-    cmd = "wget #{url}"
-    system(cmd)
-    cmd = "mv legalcode '#{filename}.html'"
-    system(cmd)
-    cmd = "html2text -utf8 '#{filename}.html' >> '../#{filename}' && rm -f '#{filename}.html'"
-    system(cmd)
+  if filename == 'Free-Art'
+    unless File.exists?("../#{filename}")
+      cmd = "wget #{url}"
+      system(cmd)    
+      cmd = "mv en '#{filename}.html'"
+      system(cmd)
+      cmd = "html2text -utf8 '#{filename}.html' >> '../#{filename}' && rm -f '#{filename}.html'"
+      system(cmd)
+     end
+  else
+    unless File.exists?("../#{filename}")
+      cmd = "wget #{url}"
+      system(cmd)    
+      cmd = "mv legalcode '#{filename}.html'"
+      system(cmd)
+      cmd = "html2text -utf8 '#{filename}.html' >> '../#{filename}' && rm -f '#{filename}.html'"
+      system(cmd)
+     end
   end
 end
 
@@ -57,9 +73,9 @@ f_slideshow_xml = File.new("#{WNAME}-extras.xml", 'w')
 f_slideshow_xml.puts <<EOF
 <background>
   <starttime>
-    <year>2015</year>
-    <month>05</month>
-    <day>26</day>
+    <year>2016</year>
+    <month>06</month>
+    <day>07</day>
     <hour>00</hour>
     <minute>00</minute>
     <second>00</second>
