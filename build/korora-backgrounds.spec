@@ -1,4 +1,4 @@
-%global relnum 24.0
+%global relnum 24
 %global Bg_Name Korora
 %global bgname korora
 
@@ -6,8 +6,8 @@
 %global with_extras 1
 
 Name:           %{bgname}-backgrounds
-Version:        %{relnum}
-Release:        2%{?dist}
+Version:        %{relnum}.0
+Release:        3%{?dist}
 Summary:        Korora default desktop background
 
 License:        CC-BY-SA
@@ -198,6 +198,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu Jul 14 2016 Ian Firns <firnsy@kororaproject.org> - 24.0-3
+- Fixed version
+
 * Wed Jul 13 2016 Ian Firns <firnsy@kororaproject.org> - 24.0-2
 - Updated images including community contributions.
 
