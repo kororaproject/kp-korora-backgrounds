@@ -1,4 +1,4 @@
-%global relnum 24
+%global relnum 24.0
 %global Bg_Name Korora
 %global bgname korora
 
