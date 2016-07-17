@@ -7,7 +7,7 @@
 
 Name:           %{bgname}-backgrounds
 Version:        %{relnum}.0
-Release:        3%{?dist}
+Release:        3%{?dist}.1
 Summary:        Korora default desktop background
 
 License:        CC-BY-SA

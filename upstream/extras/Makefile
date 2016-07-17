@@ -19,7 +19,6 @@ THEMES_PNG=aurora-over-iceland\
 	old-railroad\
 	lady-musgrave-blue\
 	ice-lake\
-	blue-deep\
 	zen\
 	morning-dew-on-leaves\
 	waves
