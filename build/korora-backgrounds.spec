@@ -1,4 +1,4 @@
-%global relnum 24
+%global relnum 25
 %global Bg_Name Korora
 %global bgname korora
 
@@ -6,13 +6,16 @@
 %global with_extras 1
 
 Name:           %{bgname}-backgrounds
-Version:        %{relnum}.0
-Release:        3%{?dist}.1
+Version:        %{relnum}.1.0
+Release:        1%{?dist}
 Summary:        Korora default desktop background
 
 License:        CC-BY-SA
 URL:            https://github.com/kororaproject/kp-korora-backgrounds
 Source0:        %{name}-%{version}.tar.gz
+# Plasma desktoptheme
+# This is in the source tarball
+#Source1:        metadata.desktop
 
 BuildArch:      noarch
 
@@ -141,7 +144,7 @@ This package contains Korora supplemental wallpapers for Xfce
 %endif
 
 %prep
-%setup -q
+%setup
 
 
 %build
@@ -149,7 +152,10 @@ make %{?_smp_mflags}
 
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT
+%make_install
+
+install -D -p -m644 metadata.desktop \
+%{buildroot}%{_datadir}/plasma/desktoptheme/%{Bg_Name}/metadata.desktop
 
 %files
 %doc
@@ -166,6 +172,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %files kde
 %{_kde4_datadir}/wallpapers/%{Bg_Name}/
+%dir %{_datadir}/plasma/
+%dir %{_datadir}/plasma/desktoptheme/
+%{_datadir}/plasma/desktoptheme/%{Bg_Name}/
 
 %files gnome
 %{_datadir}/gnome-background-properties/%{bgname}.xml
@@ -178,7 +187,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %if %{with_extras}
 %files extras-base
-%license CC-BY-SA-4.0 CC-BY-3.0 CC0-1.0 FAL-1.3 Attribution-Extras
+%license CC-BY-SA-4.0 Attribution-Extras
 %{_datadir}/backgrounds/%{bgname}/extras/*.jpg
 %{_datadir}/backgrounds/%{bgname}/extras/*.png
 %{_datadir}/backgrounds/%{bgname}/extras/%{bgname}-extras.xml
@@ -198,6 +207,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri Nov 11 2016 Chris Smart <csmart@kororaproject.org> - 25.0-1
+- Update for Korora 25
+
 * Thu Jul 14 2016 Ian Firns <firnsy@kororaproject.org> - 24.0-3
 - Fixed version
 

@@ -1,72 +1,91 @@
 <background>
   <starttime>
-    <year>2015</year>
-    <month>05</month>
-    <day>26</day>
+    <year>2016</year>
+    <month>11</month>
+    <day>15</day>
     <hour>00</hour>
     <minute>00</minute>
     <second>00</second>
   </starttime>
+
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/tree-in-winter.jpg</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/morning-dew-on-leaves.png</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/aurora-over-iceland.png</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/by-the-lake.jpg</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/iceberg-in-greenland.jpg</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/argentina-glacier.jpg</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/sunrise-in-florida-ii.png</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/ice-lake.png</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/jellyfish.jpg</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/old-railroad.png</file>
-  </static>
-  <static>
-    <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/zen.png</file>
+    <file>/usr/share/backgrounds/korora/extras/droplet-on-pebble.jpg</file>
   </static>
 
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/mistogan.jpg</file>
+    <file>/usr/share/backgrounds/korora/extras/winter-in-bohemia.png </file>
   </static>
 
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/lady-musgrave-blue.png</file>
+    <file>/usr/share/backgrounds/korora/extras/matterhorn.png</file>
   </static>
+
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/paisaje.jpg</file>
+    <file>/usr/share/backgrounds/korora/extras/milky-way-over-mangart-mountain.jpg</file>
   </static>
+
   <static>
     <duration>1800.0</duration>
-    <file>/usr/share/backgrounds/korora/extras/waves.png</file>
+    <file>/usr/share/backgrounds/korora/extras/grytviken.png</file>
   </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/manhattan.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/raindrop-in-greenland.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/cherryblossom.jpg</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/poetry-in-winter.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/the-bois-de-vincennes-france.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/zen.jpg</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/forest-path.jpg</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/color.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/soft-blue.png</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/chihuly.jpg</file>
+  </static>
+
+  <static>
+    <duration>1800.0</duration>
+    <file>/usr/share/backgrounds/korora/extras/caion-do-xingo-brazil.jpg</file>
+  </static>
+
 </background>

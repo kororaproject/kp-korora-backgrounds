@@ -1,5 +1,5 @@
 SUBDIRS = default extras
-VERSION = 24.1.0
+VERSION = 25.0.0
 NAME =  korora-backgrounds-$(VERSION)
 
 all:
@@ -15,9 +15,8 @@ install:
 dist:
 	mkdir -p $(NAME)
 	cp -a CC-BY-SA-4.0 $(NAME)
-	cp -a CC-BY-3.0 $(NAME)
+	cp -a CC-BY-4.0 $(NAME)
 	cp -a CC0-1.0 $(NAME)
-	cp -a FAL-1.3 $(NAME)
 	cp -a Attribution $(NAME)
 	cp -a Attribution-Extras $(NAME)
 	cp -a Makefile $(NAME)
