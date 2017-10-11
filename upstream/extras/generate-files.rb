@@ -3,7 +3,7 @@ require "i18n"
 
 WNAME = 'korora'
 WNAME_FULL = 'Korora'
-WVERSION = '25.0'
+WVERSION = '27.0'
 
 # load authors' info from prepared file
 authors = {}
@@ -74,9 +74,9 @@ f_slideshow_xml = File.new("#{WNAME}-extras.xml", 'w')
 f_slideshow_xml.puts <<EOF
 <background>
   <starttime>
-    <year>2016</year>
-    <month>11</month>
-    <day>15</day>
+    <year>2017</year>
+    <month>10</month>
+    <day>24</day>
     <hour>00</hour>
     <minute>00</minute>
     <second>00</second>

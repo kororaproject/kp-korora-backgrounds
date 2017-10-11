@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Korora 27 Default</name>
+        <filename>/usr/share/backgrounds/korora/default/korora.xml</filename>
+        <options>stretched</options>
+    </wallpaper>
+</wallpapers>
