@@ -8,21 +8,21 @@ INSTALL=/usr/bin/install -p -m644 -D
 LN_S=/bin/ln -s
 
 THEMES_JPG=droplet-on-pebble\
--	milky-way-over-mangart-mountain\
--	cherryblossom\
--	zen\
--	forest-path\
--	chihuly\
--	caion-do-xingo-brazil
--THEMES_PNG=winter-in-bohemia\
--	matterhorn\
--	grytviken\
--	manhattan\
--	raindrop-in-greenland\
--	poetry-in-winter\
--	the-bois-de-vincennes-france\
--	color\
--	soft-blue
+	milky-way-over-mangart-mountain\
+	cherryblossom\
+	zen\
+	forest-path\
+	chihuly\
+	caion-do-xingo-brazil
+THEMES_PNG=winter-in-bohemia\
+	matterhorn\
+	grytviken\
+	manhattan\
+	raindrop-in-greenland\
+	poetry-in-winter\
+	the-bois-de-vincennes-france\
+	color\
+	soft-blue
 
 all:
 

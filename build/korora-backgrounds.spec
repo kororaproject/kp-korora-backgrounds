@@ -2,6 +2,9 @@
 %global Bg_Name Korora
 %global bgname korora
 
+# Enable Animation
+%global with_animated 0
+
 # Enable Extras
 %global with_extras 1
 
@@ -15,7 +18,7 @@ URL:            https://github.com/kororaproject/kp-korora-backgrounds
 Source0:        %{name}-%{version}.tar.gz
 # Plasma desktoptheme
 # This is in the source tarball
-Source1:        metadata.desktop
+#Source1:        metadata.desktop
 
 BuildArch:	noarch
 
@@ -166,7 +169,7 @@ This package contains Korora supplemental wallpapers for Xfce
 %endif
 
 %prep
-%autosetup -n %{name}
+%autosetup
 
 
 %build
@@ -176,7 +179,7 @@ This package contains Korora supplemental wallpapers for Xfce
 %install
 %make_install
 
-install -D -p -m644 %{SOURCE1} \
+install -D -p -m644 metadata.desktop \
 %{buildroot}%{_datadir}/plasma/desktoptheme/%{Bg_Name}/metadata.desktop
 
 %files
