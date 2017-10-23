@@ -36,26 +36,26 @@ install:
 	$(INSTALL) mate-backgrounds-korora-extras.xml 	$(MATE_BG_DIR)/korora-extras.xml
 	for theme in $(THEMES_JPG) ; do \
 	  $(INSTALL) $${theme}.jpg $(KORORA_DIR)/extras/$${theme}.jpg ;\
-	  $(MKDIR) $(KDE_BG_DIR)/korora_$${theme}/contents/images ;\
+	  $(MKDIR) $(KDE_BG_DIR)/Korora_$${theme}/contents/images ;\
 	  $(INSTALL) $${theme}.desktop $(KDE_BG_DIR)/korora_$${theme}/metadata.desktop ; \
 	  for res in 1280x1024 \
 		     640x480 800x600 1024x768 1152x864 1200x900 1280x960 1440x1080 1600x1200 1600x1280 1920x1440 2048x1536 \
 		     800x480 1024x600 1152x720 1280x720 1280x768 1280x800 1366x768 1440x900 1680x1050 1920x1080 1920x1200 ; do \
 	    $(LN_S) ../../../../backgrounds/korora/extras/$${theme}.jpg \
-	            $(KDE_BG_DIR)/korora_$${theme}/contents/images/$${res}.jpg ; \
+	            $(KDE_BG_DIR)/Korora_$${theme}/contents/images/$${res}.jpg ; \
 	  done; \
 	  $(LN_S) ../../backgrounds/korora/extras/$${theme}.jpg \
 			$(XFCE_BG_DIR)/korora-$${theme}.jpg ;\
 	done;
 	for theme in $(THEMES_PNG) ; do \
 	  $(INSTALL) $${theme}.png $(KORORA_DIR)/extras/$${theme}.png ;\
-	  $(MKDIR) $(KDE_BG_DIR)/korora_$${theme}/contents/images ;\
-	  $(INSTALL) $${theme}.desktop $(KDE_BG_DIR)/korora_$${theme}/metadata.desktop ; \
+	  $(MKDIR) $(KDE_BG_DIR)/Korora_$${theme}/contents/images ;\
+	  $(INSTALL) $${theme}.desktop $(KDE_BG_DIR)/Korora_$${theme}/metadata.desktop ; \
 	  for res in 1280x1024 \
 		     640x480 800x600 1024x768 1152x864 1200x900 1280x960 1440x1080 1600x1200 1600x1280 1920x1440 2048x1536 \
 		     800x480 1024x600 1152x720 1280x720 1280x768 1280x800 1366x768 1440x900 1680x1050 1920x1080 1920x1200 ; do \
 	    $(LN_S) ../../../../backgrounds/korora/extras/$${theme}.png \
-	            $(KDE_BG_DIR)/korora_$${theme}/contents/images/$${res}.png ; \
+	            $(KDE_BG_DIR)/Korora_$${theme}/contents/images/$${res}.png ; \
 	  done; \
 	  $(LN_S) ../../backgrounds/korora/extras/$${theme}.png \
 			$(XFCE_BG_DIR)/korora-$${theme}.png ;\
